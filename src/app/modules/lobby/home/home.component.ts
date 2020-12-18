@@ -15,15 +15,18 @@ export class HomeComponent implements OnInit {
   }
   
   enterClickExhibition(){
-    this.enterClick(3)
+    this.enterClick(2)
+    this.router.navigate(['/exhibition'])
   }
   
   enterClicksolutions(){
     this.enterClick(3)
+    this.router.navigate(['/solutions'])
   }
   
   enterClickNetworking(){
-    this.enterClick(3)
+    this.enterClick(5)
+    this.router.navigate(['/networking'])
   }
   enterClick(btn_id:any){
     var data={

@@ -35,6 +35,7 @@ export class SignInComponent implements OnInit {
           localStorage.setItem('token',res.token);
           this.router.navigate(['home'])
           this.empty()
+          this.loginClick(1)
         },err=>{
           console.log(err)
           this.empty()
@@ -54,5 +55,20 @@ export class SignInComponent implements OnInit {
     empty(){
       this.fullName="";
       this.email="";
+    }
+    loginClick(btn_id:any){
+      var data={
+        "user_id":localStorage.getItem('user_id'),
+        "btn_id":btn_id,
+        "token":localStorage.getItem('token')
+      }
+      this.service.post(this.service.insertuserpoints,data).subscribe(
+        res=>{
+          console.log(res)
+        },
+        err=>{
+          console.log(err)
+        }
+        )
     }
   }
