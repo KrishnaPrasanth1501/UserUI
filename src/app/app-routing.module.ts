@@ -4,13 +4,13 @@ import { PagerNotFoundComponent } from './pager-not-found/pager-not-found.compon
 import { AuthGuard } from './services/auth.guard';
 
 const routes: Routes = [
+  // {
+  //   path:'',
+  //   redirectTo:'si',
+  //   pathMatch:'full'
+  // },
   {
     path:'',
-    redirectTo:'signin',
-    pathMatch:'full'
-  },
-  {
-    path:'signin',
     loadChildren: () => import('./modules/auth/auth.module').then(m => m.AuthModule)
   },
   {

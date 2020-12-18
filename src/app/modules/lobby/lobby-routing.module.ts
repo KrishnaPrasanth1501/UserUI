@@ -29,7 +29,7 @@ const routes:Routes=[
     component:ExhibitionComponent,
     canActivate:[AuthGuard]
   }
-]
+];
 @NgModule({
   declarations: [],
   imports: [RouterModule.forChild(routes)],

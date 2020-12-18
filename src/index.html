@@ -13,6 +13,127 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+  (function($) {
+    //Function to animate slider captions
+    function doAnimations(elems) {
+      //Cache the animationend event in a variable
+      var animEndEv = "webkitAnimationEnd animationend";
+  
+      elems.each(function() {
+        var $this = $(this),
+          $animationType = $this.data("animation");
+        $this.addClass($animationType).one(animEndEv, function() {
+          $this.removeClass($animationType);
+        });
+      });
+    }
+  
+    //Variables on page load
+    var $myCarousel = $("#carouselExampleIndicators"),
+      $firstAnimatingElems = $myCarousel
+        .find(".carousel-item:first")
+        .find("[data-animation ^= 'animated']");
+  
+    //Initialize carousel
+    $myCarousel.carousel();
+  
+    //Animate captions in first slide on page load
+    doAnimations($firstAnimatingElems);
+  
+    //Other slides to be animated on carousel slide event
+    $myCarousel.on("slide.bs.carousel", function(e) {
+      var $animatingElems = $(e.relatedTarget).find(
+        "[data-animation ^= 'animated']"
+      );
+      doAnimations($animatingElems);
+    });
+  })(jQuery);
+  
+  
+  
+  
+  $('.ml11 .letters').each(function() {
+      $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+    });
+    anime.timeline({
+      loop: false
+    }).add({
+      targets: '.ml11 .line',
+      scaleY: [0, 1],
+      opacity: [0.5, 1],
+      easing: "easeOutExpo",
+      duration: 700
+    }).add({
+      targets: '.ml11 .line',
+      translateX: [0, $(".ml11 .letters").width()],
+      easing: "easeOutExpo",
+      duration: 700,
+      delay: 100
+    }).add({
+      targets: '.ml11 .letter',
+      opacity: [0, 1],
+      easing: "easeOutExpo",
+      duration: 600,
+      offset: '-=775',
+      delay: function(el, i) {
+        return 34 * (i + 1)
+      }
+    }).add({
+      targets: '.ml11',
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+    </script>
+    <!-- <script>
+      console.log(new Date())
+          if (new Date() < new Date('Dec 06 2020 10:35:00 GMT+0530')) {
+              window.location = './countdown.html'
+          } else {
+              if (sessionStorage.getItem('token') !== 'enable') {
+              // var err_html = `<label class="error"><strong>Please Login To Enter</strong></span>`;
+              // $('#text').append(err_html);
+                window.location = "./modal-popup.html";
+            }
+          }
+    </script> -->
+    
+    <script>
+      var video = document.getElementById("mp4");
+      var spinner = document.getElementById("spinner");
+      var delayMillis = 0;
+      var spinnerIsHere = 1;
+      video.volume = 0;
+      
+      var playVid = setTimeout(function() {
+        if(spinnerIsHere == 1) {
+        // Delete element DOM
+        // spinner.parentNode.removeChild(spinner);
+        spinner.style.visibility = "hidden";
+        spinnerIsHere = 0;
+        }
+        video.play();
+      }, delayMillis);
+      
+      video.addEventListener("click", function( event ) {
+        if(video.paused) {
+        if(spinnerIsHere == 1) {
+          // Delete element DOM
+          // spinner.parentNode.removeChild(spinner);
+          spinner.style.visibility = "hidden";
+          spinnerIsHere = 0;
+        }
+        clearTimeout(playVid);
+        video.play();
+        } else {
+        video.pause();
+        if(spinnerIsHere == 0) {
+          spinner.style.visibility = "visible";
+          spinnerIsHere = 1;
+        }
+        }
+      }, false);</script>
 </head>
 <body>
   <app-root></app-root>
