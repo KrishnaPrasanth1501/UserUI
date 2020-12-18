@@ -1,0 +1,344 @@
+@media (max-width:2600px) and (min-width:1700px){
+
+    .image-class{
+        margin-top: 171px;
+    }
+   .lenovadiv1{
+       margin-top: 80px;
+       width: 350px;
+   }
+
+   .mar-t-100{
+       margin-top: 120px!important;
+   }
+   .inteldiv {
+    width: 520px;
+    padding-top: 15px;
+    padding-right: 50px;
+   } 
+   .lenovo-tetimg{
+       width: 515px;
+   }
+   .resppad{
+       padding-top: 20px;
+   }
+   .login-title span{
+    font-size: 21px;
+    font-family: "Gotham-Bold";
+    margin-bottom: 30px;
+   }
+   .message {
+    /* position: absolute; */
+    width: 722px;
+    /* top: 0; */
+    color: #fff;
+    height: 420px;
+    margin: 0 auto;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: rgba(241, 241, 241,0.5);
+    /* box-shadow: 0px 0px 15px rgba(105, 34, 122, 0.7); */
+    margin-top: 100px;
+    padding: 40px auto;
+    border-radius: 27.5px!important;
+}
+.message .form-group {
+    margin-bottom: 50px!important;
+}
+.message .form-control {
+    width: 492px;
+    margin: 0 auto;
+    border: 2px solid #fff;
+    background-color: transparent;
+    border-radius: 33.14px;
+    height: 65px;
+    text-align: center;
+    font-size: 21pt;
+    font-family: 'Gotham Book';
+}
+.btnbig {
+    background: linear-gradient(to right, #d7355a, #db2f28 , #f06721);
+    color: #fff;
+    padding: 1px 45px;
+    text-align: center;
+    border-radius: 28.5px;
+    border: 2px solid #fff;
+    width: 303.23px;
+    height: 55px;
+    font-size: 21pt;
+    font-family: 'Gotham-Bold';
+}
+
+
+.lenovadiv3 {
+    position: absolute;
+    bottom: 70px;
+    right: 0px;
+    width: 350px;
+}
+.mr-stn {
+    margin-left: 25px;
+    margin-top: 145px;
+}
+.img-stn {
+    margin-top: 100px;
+    margin-left: -23px;
+}
+
+.mr-stn1 {
+    margin-top: -85px;
+    margin-left: -35px;
+}
+.img-stn1 {
+    margin-top: -25px;
+    margin-left: -52px;
+}
+.mr-stn2 {
+    margin-left: -40px;
+    margin-top: 25px;
+}
+.mr-stn3 {
+    margin-left: -130px;
+    margin-top: 147px;
+}
+.img-stn3 {
+    margin-top: 107px;
+    margin-left: -190px;
+}
+.img-stn2 {
+    margin-top: -22px;
+    margin-left: -47px;
+}
+.yogabox{
+    margin-top: 316px;
+}
+.marleft{
+    margin-left:-110px;
+}
+.marleft1{
+    margin-left: 50px;
+}
+
+.yogabox {
+    background-color: rgba(0,0,0,0.4);
+    /* padding: 5px 0px 5px 5px; */
+    border-radius: 7.27px;
+    width: 135px;
+    height: 77px;
+    text-align: center;
+    margin: 342px auto 0px 116px;
+    /* padding-top: 3px; */
+}
+.yogabox2 {
+    background-color: rgba(0,0,0,0.4);
+    /* padding: 5px 0px 5px 5px; */
+    border-radius: 7.27px;
+    width: 135px;
+    height: 77px;
+    text-align: center;
+    margin: 342px auto 0px 84px;
+    /* padding-top: 3px; */
+}
+.products-display12 li .nav-link {
+    background-image: url(../images/pro2-01.png);
+    background-repeat: no-repeat;
+    width: 135.688px;
+    background-size: contain;
+    font-size: 8.57pt;
+    line-height: 28px;
+    height: 29.3px;
+    font-family: Gotham-bold;
+    padding: 0px;
+}
+
+
+}
+@media (max-width:1560px) and (min-width:1480px){
+    .yogabox{
+        margin: 152px auto 0px 110px;
+    }
+    .yogabox2{
+        margin: 154px auto 0px 75px;
+    }
+}
+
+@media (max-width:1440px){
+    .yogabox{
+        margin-top: 251px;
+    }
+    .yogabox2{
+        margin-top: 253px;
+    }
+
+    .lenovo-tetimg {
+        width: 75%;
+        padding-top: 15px;
+        padding-left: 50px;
+    }
+    .bord-b1 {
+        padding: 75px 0px!important;
+        width: 693px;
+        height: 340px;
+        margin-top: 100px!important;
+    }
+    .flip-clock__piece {
+        margin: 0 14.5px;
+    }
+    .loginpage {
+        background-position: top left;
+    }
+    .mr-stn {
+        margin-left: -40px;
+        margin-top: 53px;
+    }
+    .img-stn {
+        margin-top: 12px;
+        margin-left: -94px;
+    }
+    .mr-stn1 {
+        margin-left: -50px;
+        margin-top: -87px;
+    }
+    .img-stn1 {
+        margin-top: -90px;
+        margin-left: -80px;
+    }
+    .mr-stn2 {
+        margin-left: -15px;
+        margin-top: -50px;
+    }
+    .img-stn2 {
+        margin-top: -92px;
+        margin-left: -22px;
+    }
+    .mr-stn3 {
+        margin-left: -54px;
+        margin-top: 50px;
+    }
+    .img-stn3 {
+        margin-top: 0px;
+        margin-left: -107px;
+    }
+}
+@media (max-width:1400px){
+    .mr-stn {
+        margin-left: -55px;
+    }
+    .img-stn {
+        margin-left: -110px;
+    }
+    .mr-stn1 {
+        margin-left: -55px;
+    }
+    .img-stn1 {
+        margin-left: -92px;
+    }
+    .mr-stn2 {
+        margin-left: -10px;
+    }
+    .img-stn2 {
+        margin-left: -14px;
+    }
+    .mr-stn3 {
+        margin-left: -40px;
+    }
+    .img-stn3 {
+        margin-left: -89px;
+    }
+}
+
+@media (max-width:1366px) and (max-height:768px){
+    .yogabox {
+        border-radius: 7.27px;
+        width: 106px;
+        height: 66px;
+        margin-top: 130px;
+        margin-left: 93px;
+    }
+    .yogabox2 {
+        border-radius: 7.27px;
+        width: 106px;
+        height: 66px;
+        margin-top: 132px;
+        margin-left: 66px;
+    }
+    .stn-form label{
+        font-size:11pt;
+        font-family: "Gotham Book";
+    
+    }
+    /* .yogabox {
+        border-radius: 7.27px;
+        width: 106px;
+        height: 66px;
+        margin-top: 150px;
+        margin-left: 93px;
+    }
+    .yogabox2 {
+        border-radius: 7.27px;
+        width: 106px;
+        height: 66px;
+        margin-top: 152px;
+        margin-left: 66px;
+    } */
+    .products-display12 li .nav-link{
+        width: 104.688px;
+    background-size: contain;
+    font-size: 8.57pt;
+    line-height: 28px;
+    height: 24.3px;
+    }
+    .marleft{
+        margin-left: 60px;
+    }
+    .marleft1{
+        margin-left: -35px;
+    }
+    .lenovo-tetimg {
+        width: 65%;
+        padding-top: 15px;
+        padding-left: 0px;
+    }
+    .message{
+        margin-top: 70px;
+    }
+  
+    .bord-b1 {
+        margin-top: 80px!important;
+    }
+    /* .image-class {
+        margin-top: 163px;
+        margin-left: 177px;
+    } */
+    .mr-stn {
+        margin-left: 16px;
+    }
+    .img-stn {
+        margin-left: -40px;
+    }
+    .mr-stn1 {
+        margin-left: -22px;
+        margin-top: -90px;
+    }
+    .img-stn1 {
+        margin-left: -35px;
+        /* margin-top: -90px; */
+    }
+    .resmar2 {
+        margin-left: 85px!important;
+        margin-top: 175px!important;
+    }
+    .resmar1{
+        margin-top: 175px;
+    }
+    .resmar3{
+        margin-top: 160px;
+    }
+    .resmar4{
+        margin-top: 160px;
+        margin-left: 50px;
+    }
+    .img-stn3 {
+        margin-left: -95px;
+        margin-top: 7px;
+    }
+}

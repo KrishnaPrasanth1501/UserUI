@@ -1,0 +1,48 @@
+<header >
+    <div class="container-fluid">
+        <div class="row headbar">
+            <div class="logobox">
+                 <div>
+                    <img src="../../../../../assets/images/lenovo-01.png" class="img-fluid" alt=""> 
+                 </div>
+                 <div>
+                    <img src="../../../../../assets/images/button12-01.png" class="img-fluid" alt=""> 
+                 </div>
+            </div>
+            <div class="menu ">
+                <ul class="nav justify-content-end pt-2">
+                    <li class="nav-item"> <a class="nav-link active" [routerLink]="'/home'">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#leaderboard">Leaderboard </a> </li>
+        
+                    <li class="nav-item mar-right-10"> <a class="nav-link" (click)="logout()" >Log Out</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+	<div class="modal fade" id="leaderboard" tabindex="-1" role="dialog" aria-labelledby="leaderboardTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content  leader-popup">
+			<div class="modal-header pdn-stn bg-clr ">
+				
+						<h6 class="text-center white m-auto">LEADERBOARD</h6>
+				
+			
+			<button type="button" class="close1" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body text-bckclr radius-stn text-center p-5">
+			<h6 class="font-stn white  mt-3">Hi username,your points are 200.</h6>
+
+			
+
+
+
+			</div>
+			
+		</div>
+		</div>
+	</div>
+
+</header>
