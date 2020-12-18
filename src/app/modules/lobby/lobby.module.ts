@@ -7,11 +7,15 @@ import { FooterComponent } from './common/footer/footer.component';
 import { ExhibitionComponent } from './exhibition/exhibition.component';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { NetworkingComponent } from './networking/networking.component';
+import { YogaComponent } from './yoga/yoga.component';
+import { ThinkBookComponent } from './think-book/think-book.component';
+import { ThinkPadComponent } from './think-pad/think-pad.component';
+import { IdeaPadComponent } from './idea-pad/idea-pad.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, FooterComponent, ExhibitionComponent, SolutionsComponent, NetworkingComponent],
+  declarations: [HomeComponent, HeaderComponent, FooterComponent, ExhibitionComponent, SolutionsComponent, NetworkingComponent, YogaComponent, ThinkBookComponent, ThinkPadComponent, IdeaPadComponent],
   imports: [
     CommonModule,
     LobbyRoutingModule

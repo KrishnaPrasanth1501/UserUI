@@ -3,18 +3,18 @@ import { Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
 
 @Component({
-  selector: 'app-networking',
-  templateUrl: './networking.component.html',
-  styleUrls: ['./networking.component.css']
+  selector: 'app-idea-pad',
+  templateUrl: './idea-pad.component.html',
+  styleUrls: ['./idea-pad.component.css']
 })
-export class NetworkingComponent implements OnInit {
+export class IdeaPadComponent implements OnInit {
 
   constructor(private router:Router,private service:ApiService) { }
 
   ngOnInit(): void {
     var data={
       "user_id":localStorage.getItem('user_id'),
-      "pages":"networking",
+      "pages":"idea-pad",
       "token":localStorage.getItem('token'),
     }
     this.service.post(this.service.inseruservisitpages,data).subscribe(res=>{
@@ -23,5 +23,4 @@ export class NetworkingComponent implements OnInit {
       console.log(err)
     })
   }
-
 }

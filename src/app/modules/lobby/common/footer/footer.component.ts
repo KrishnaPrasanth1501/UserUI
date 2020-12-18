@@ -16,17 +16,17 @@ export class FooterComponent implements OnInit {
   
   enterClickExhibition(){
     this.enterClick(2)
-    this.router.navigate(['/exhibition'])
+    this.router.navigate(['home/exhibition'])
   }
   
   enterClicksolutions(){
     this.enterClick(3)
-    this.router.navigate(['/solutions'])
+    this.router.navigate(['home/solutions'])
   }
   
   enterClickNetworking(){
     this.enterClick(5)
-    this.router.navigate(['/networking'])
+    this.router.navigate(['home/networking'])
   }
   enterClick(btn_id:any){
     var data={

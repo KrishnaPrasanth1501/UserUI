@@ -12,21 +12,31 @@ export class HomeComponent implements OnInit {
   constructor(private router:Router,private service:ApiService) { }
 
   ngOnInit(): void {
+    var data={
+      "user_id":localStorage.getItem('user_id'),
+      "pages":"home",
+      "token":localStorage.getItem('token'),
+    }
+    this.service.post(this.service.inseruservisitpages,data).subscribe(res=>{
+      console.log(res)
+    },err=>{
+      console.log(err)
+    })
   }
   
   enterClickExhibition(){
     this.enterClick(2)
-    this.router.navigate(['/exhibition'])
+    this.router.navigate(['home/exhibition'])
   }
   
   enterClicksolutions(){
     this.enterClick(3)
-    this.router.navigate(['/solutions'])
+    this.router.navigate(['home/solutions'])
   }
   
   enterClickNetworking(){
     this.enterClick(5)
-    this.router.navigate(['/networking'])
+    this.router.navigate(['home/networking'])
   }
   enterClick(btn_id:any){
     var data={
@@ -55,7 +65,7 @@ export class HomeComponent implements OnInit {
         localStorage.removeItem('username')
         localStorage.removeItem('email')
         localStorage.removeItem('status')
-        this.router.navigate(['signin'])
+        this.router.navigate([''])
       },
       err=>{
         console.log(err)

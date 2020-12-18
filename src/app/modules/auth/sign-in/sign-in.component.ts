@@ -26,11 +26,9 @@ export class SignInComponent implements OnInit {
       if(this.nonEmpty()){
         this.service.post(this.service.user_signIn,data).subscribe(res=>{
           console.log(res)
-          localStorage.setItem('user_id',res.details[0].user_id)
-          localStorage.setItem('username',res.details[0].username)
-          localStorage.setItem('email',res.details[0].email)
-          localStorage.setItem('email',res.details[0].country)
-          localStorage.setItem('email',res.details[0].status)
+          localStorage.setItem('user_id',res.details.user_id)
+          localStorage.setItem('username',res.details.username)
+          localStorage.setItem('email',res.details.email)
           console.log(res.token)
           localStorage.setItem('token',res.token);
           this.router.navigate(['home'])

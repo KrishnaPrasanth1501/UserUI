@@ -7,6 +7,10 @@ import { AuthModule } from '../auth/auth.module';
 import { SolutionsComponent } from './solutions/solutions.component';
 import { NetworkingComponent } from './networking/networking.component';
 import { ExhibitionComponent } from './exhibition/exhibition.component';
+import { YogaComponent } from './yoga/yoga.component';
+import { ThinkBookComponent } from './think-book/think-book.component';
+import { ThinkPadComponent } from './think-pad/think-pad.component';
+import { IdeaPadComponent } from './idea-pad/idea-pad.component';
 
 const routes:Routes=[
   {
@@ -27,6 +31,26 @@ const routes:Routes=[
   {
     path:'exhibition',
     component:ExhibitionComponent,
+    canActivate:[AuthGuard]
+  },
+  {
+    path:'yoga',
+    component:YogaComponent,
+    canActivate:[AuthGuard]
+  },
+  {
+    path:'thinkpad',
+    component:ThinkPadComponent,
+    canActivate:[AuthGuard]
+  },
+  {
+    path:'thinkbook',
+    component:ThinkBookComponent,
+    canActivate:[AuthGuard]
+  },
+  {
+    path:"ideapad",
+    component:IdeaPadComponent,
     canActivate:[AuthGuard]
   }
 ];

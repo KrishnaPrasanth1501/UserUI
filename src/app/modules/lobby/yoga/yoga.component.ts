@@ -3,18 +3,17 @@ import { Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
 
 @Component({
-  selector: 'app-networking',
-  templateUrl: './networking.component.html',
-  styleUrls: ['./networking.component.css']
+  selector: 'app-yoga',
+  templateUrl: './yoga.component.html',
+  styleUrls: ['./yoga.component.css']
 })
-export class NetworkingComponent implements OnInit {
-
+export class YogaComponent implements OnInit {
   constructor(private router:Router,private service:ApiService) { }
 
   ngOnInit(): void {
     var data={
       "user_id":localStorage.getItem('user_id'),
-      "pages":"networking",
+      "pages":"yoga",
       "token":localStorage.getItem('token'),
     }
     this.service.post(this.service.inseruservisitpages,data).subscribe(res=>{
@@ -23,5 +22,4 @@ export class NetworkingComponent implements OnInit {
       console.log(err)
     })
   }
-
 }
