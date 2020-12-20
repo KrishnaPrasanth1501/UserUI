@@ -7,6 +7,7 @@ import { ApiService } from 'src/app/services/api.service';
   templateUrl: './yoga.component.html',
   styleUrls: ['./yoga.component.css']
 })
+
 export class YogaComponent implements OnInit {
   constructor(private router:Router,private service:ApiService) { }
 
@@ -16,12 +17,25 @@ export class YogaComponent implements OnInit {
       "pages":"yoga",
       "token":localStorage.getItem('token'),
     }
+    
     this.service.post(this.service.inseruservisitpages,data).subscribe(res=>{
       console.log(res)
     },err=>{
       console.log(err)
     })
+    this.loadScript('../../../../assets/js/validation.js');
+    // this.loadScript('../../../../assets/js/form-submission-handler.js');
   }
+  loadScript(url: string) {
+    const body = <HTMLDivElement> document.body;
+    const script = document.createElement('script');
+    script.innerHTML = '';
+    script.src = url;
+    script.async = false;
+    script.defer = true;
+    body.appendChild(script);
+  }
+
   viewProducts(userdata:string){
     var data={
       "user_id":localStorage.getItem('user_id'),
@@ -34,4 +48,5 @@ export class YogaComponent implements OnInit {
       console.log(err)
     })
   }
+  
 }

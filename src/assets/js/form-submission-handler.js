@@ -55,7 +55,7 @@
     var form = event.target;
     var formData = getFormData(form);
     var data = formData.data;
-
+console.log(form)
     // If a honeypot field is filled, assume it was done so by a spam bot.
     if (formData.honeypot) {
       return false;
@@ -68,6 +68,7 @@
       // xhr.withCredentials = true;
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function() {
+        
           if (xhr.readyState === 4 && xhr.status === 200) {
             form.reset();
             var formElements = form.querySelector(".form-elements")
@@ -77,11 +78,12 @@
             var thankYouMessage = form.querySelector(".thankyou_message");
             if (thankYouMessage) {
               thankYouMessage.style.display = "block";
-              setTimeout(function(){
-                  $('#enqiurenow').modal('hide')
-              },3000);
+              // setTimeout(function(){
+              //     $('#enqiurenow').modal('hide')
+              // }, 5000);
             }
           }
+          return false;
       };
       // url encode form data for sending as post data
       var encoded = Object.keys(data).map(function(k) {

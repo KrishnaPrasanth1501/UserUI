@@ -22,12 +22,27 @@ export class ThinkBookComponent implements OnInit {
       console.log(err)
     })
   }
+  enterClick(btn_id:any){
+    var data={
+      "user_id":localStorage.getItem('user_id'),
+      "btn_id":btn_id,
+      "token":localStorage.getItem('token')
+    }
+    this.service.post(this.service.insertuserpoints,data).subscribe(
+      res=>{
+        console.log(res)
+      },
+      err=>{
+        console.log(err)
+      })
+    }
   viewProducts(userdata:string){
     var data={
       "user_id":localStorage.getItem('user_id'),
       "pages":userdata,
       "token":localStorage.getItem('token'),
     }
+    this.enterClick(6)
     this.service.post(this.service.inseruservisitpages,data).subscribe(res=>{
       console.log(res)
     },err=>{

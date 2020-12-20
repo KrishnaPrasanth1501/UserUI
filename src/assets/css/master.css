@@ -1911,3 +1911,8 @@ option{
     z-index: 99;
     right: 0;
 }
+
+.modal-backdrop {
+  
+    z-index: 99;
+}

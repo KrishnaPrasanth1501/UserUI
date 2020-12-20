@@ -18,12 +18,14 @@
 <body>
   <app-root></app-root>
   <script src="https://chatwee-api.com/v2/script/5fda2bf5746ed6272a1475b2.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-  
+  <script>
+    
+    </script>
 	<script>
 		var video = document.getElementById("mp4");
 		var spinner = document.getElementById("spinner");
@@ -60,47 +62,9 @@
 		  }
 		}, false);</script>
 
-<script>
-  $("form[name='eniqueryform']").validate({
-    rules: {
-      Name: "required",
-      email: {
-        required: true,
-        email: true
-      },
-      company: "required",
-      jobtitle: "required",
-      phone: {
-        required: true,
-        digits: true,
-        minlength: 10,
-        maxlength: 10
-      },
-      country: "required",
-      product: "required"
-    },
-    messages: {
-      Name: {
-        required: "Name and Surname Required."
-      },
-      email: "Please enter a valid email address",
-      jobtitle: "Please Enter Your Job Title",
-      phone: {
-        required: "Please enter phone number",
-        digits: "Please enter valid phone number",
-        minlength: "Phone number field accept only 10 digits",
-        maxlength: "Phone number field accept only 10 digits"
-      },
-      company: "Company Name is Required",
-      country: "Country Name is Required",
-      product: {
-        required: "Please Select Product"
-      }
-  
-    }
-  })
-  </script>
 
+
+<!-- <script data-cfasync="false" type="text/javascript" src="./assets/js/form-submission-handler.js"></script> -->
 
 
 
@@ -228,7 +192,6 @@
         s0.parentNode.insertBefore(s1,s0);
         })();
      </script>
-  <script data-cfasync="false" type="text/javascript" src="./assets/js/form-submission-handler.js"></script>
 
 </body>
 </html>

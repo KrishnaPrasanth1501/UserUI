@@ -32,15 +32,15 @@ export class ExhibitionComponent implements OnInit {
   }
   ideaPad(){
     this.router.navigate(['home/ideapad']);
-    this.enterClick(3)
+    this.enterClick(12)
   }
   thinkbooth(){
     this.router.navigate(['home/thinkbook']);
-    this.enterClick(3)
+    this.enterClick(13)
   }
   thinkpad(){
     this.router.navigate(['home/thinkpad']);
-    this.enterClick(3)
+    this.enterClick(11)
   }
   enterClick(btn_id:any){
     var data={
