@@ -22,4 +22,16 @@ export class ThinkPadComponent implements OnInit {
       console.log(err)
     })
   }
+  viewProducts(userdata:string){
+    var data={
+      "user_id":localStorage.getItem('user_id'),
+      "pages":userdata,
+      "token":localStorage.getItem('token'),
+    }
+    this.service.post(this.service.inseruservisitpages,data).subscribe(res=>{
+      console.log(res)
+    },err=>{
+      console.log(err)
+    })
+  }
 }

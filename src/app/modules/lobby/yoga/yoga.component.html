@@ -19,9 +19,9 @@
         <li class="nav-item dropdown"> <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> 
              Select Booth </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="thinkpadbooth.html"> Thinkpad booth </a></li>
-                <li><a class="dropdown-item" href="thinkbookbooth.html">Thinkbook booth</a></li>
-                <li><a class="dropdown-item" href="legionbooth.html"> Legion booth</a></li>
+                <li><a class="dropdown-item" routerLink="../thinkpad"> Thinkpad booth </a></li>
+                <li><a class="dropdown-item" routerLink="../thinkbook">Thinkbook booth</a></li>
+                <li><a class="dropdown-item" routerLink="../ideapad"> Legion booth</a></li>
             
             </ul>
         </li>
@@ -37,7 +37,7 @@
             <div>
                 <div class="yogabox">
                 <ul class=" products-display12">
-                    <li class="nav-item"> <a class="nav-link active" href="#" data-toggle="modal" data-target=".productview">View Products</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" href="#" data-toggle="modal" (click)="viewProducts('yogaproducts')" data-target=".productview">View Products</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#"  data-toggle="modal" data-target="#enqiurenow">Enquire Now </a> </li>
         </ul>
             </div>
@@ -54,8 +54,8 @@
             <div>
                 <div class="yogabox2">
                 <ul class=" products-display12">
-                    <li class="nav-item"> <a class="nav-link active" href="index.html" data-toggle="modal" data-target=".ideapad">View Products</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="about.html" data-toggle="modal" data-target="#enqiurenow">Enquire Now </a> </li>
+                    <li class="nav-item"> <a class="nav-link active"  data-toggle="modal" (click)="viewProducts('ideapad products')" data-target=".ideapad">View Products</a> </li>
+                    <li class="nav-item"> <a class="nav-link"  data-toggle="modal" data-target="#enqiurenow">Enquire Now </a> </li>
         </ul>
             </div>
         </div>

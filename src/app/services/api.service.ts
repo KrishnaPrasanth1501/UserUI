@@ -16,6 +16,7 @@ export class ApiService {
   logout=`${this.apiUrl}/auth/updatelogouttime`;
   insertuserpoints=`${this.apiUrl}/count/insertuserpoints`;
   inseruservisitpages=`${this.apiUrl}/count/insertuservisitpages`;
+  getuserleaderpoints=`${this.apiUrl}/count/getuserleaderpoints`;
 
   constructor(private http: HttpClient) { }
 

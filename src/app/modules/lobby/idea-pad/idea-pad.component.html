@@ -19,9 +19,9 @@
 						<li class="nav-item dropdown"> <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> 
 							 Select Booth </a>
 							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="yogabooth.html"> Yoga booth</a></li>
-								<li><a class="dropdown-item" href="thinkpadbooth.html"> Thinkpad booth </a></li>
-								<li><a class="dropdown-item" href="thinkbookbooth.html">Thinkbook booth</a></li>
+								<li><a class="dropdown-item" routerLink="../yoga"> Yoga booth</a></li>
+								<li><a class="dropdown-item" routerLink="../thinkpad"> Thinkpad booth </a></li>
+								<li><a class="dropdown-item" routerLink="../thinkbook">Thinkbook booth</a></li>
 							
 							</ul>
 						</li>
@@ -46,7 +46,7 @@
 			<div class="ml-3">
 				<div class="yogabox">
 					<ul class=" products-display12">
-						<li class="nav-item"> <a class="nav-link active"  href="#" data-toggle="modal" data-target=".productview">View Products</a> </li>
+						<li class="nav-item"> <a class="nav-link active" (click)="viewProducts('thinkbook products')" href="#" data-toggle="modal" data-target=".productview">View Products</a> </li>
 						<li class="nav-item"> <a class="nav-link" href="about.html" data-toggle="modal" data-target="#enqiurenow">Enquire Now </a> </li>
 			</ul>
 				</div>
@@ -67,7 +67,7 @@
 				<div>
 					<div class="yogabox2">
 					<ul class=" products-display12">
-						<li class="nav-item"> <a class="nav-link active"  href="#" data-toggle="modal" data-target=".productview-ideapad">View Products</a> </li>
+						<li class="nav-item"> <a class="nav-link active"  href="#" data-toggle="modal" (click)="viewProducts('ideapad products')"data-target=".productview-ideapad">View Products</a> </li>
 						<li class="nav-item"> <a class="nav-link" href="about.html" data-toggle="modal" data-target="#enqiurenow">Enquire Now </a> </li>
 			</ul>
 				</div>

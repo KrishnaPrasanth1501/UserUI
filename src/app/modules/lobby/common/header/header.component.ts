@@ -8,10 +8,12 @@ import { ApiService } from 'src/app/services/api.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  username:any;
+  totalpoints: any;
   constructor(private service:ApiService,private router:Router) { }
-
+  
   ngOnInit(): void {
+  this.username=localStorage.getItem('username')
   }
   logout(){
     var d=new Date()
@@ -34,5 +36,23 @@ export class HeaderComponent implements OnInit {
         console.log(err)
       }
       )
-}
+  }
+  userpoints(){
+    console.log("userpoints")
+    var data={
+      "user_id":localStorage.getItem('user_id')
+    }
+    this.service.post(this.service.getuserleaderpoints,data).subscribe(res=>{
+      console.log(res)
+      this.totalpoints=res.details[0].userpoints
+      // for(let data of res.details){
+      //   this.totalpoints+=ParseInt(data.userpoints)
+      // }
+    },err=>{
+      console.log(err)
+    })
+
+  }
+
+
 }

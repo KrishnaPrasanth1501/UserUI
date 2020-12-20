@@ -20,9 +20,9 @@
                 <li class="nav-item dropdown"> <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown"> 
                      Products </a>
                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="yogabooth.html"> Yoga booth</a></li>
-                        <li><a class="dropdown-item" href="legionbooth.html"> Legion booth </a></li>
-                        <li><a class="dropdown-item" href="thinkbookbooth.html">Thinkbook booth</a></li>
+                        <li><a class="dropdown-item" routerLink="../yoga"> Yoga booth</a></li>
+                        <li><a class="dropdown-item" routerLink="../ideapad"> Legion booth </a></li>
+                        <li><a class="dropdown-item" routerLink="../thinkbook">Thinkbook booth</a></li>
                     
                     </ul>
                 </li>
@@ -39,7 +39,7 @@
         <div>
             <div class="yogabox">
                 <ul class=" products-display12">
-                    <li class="nav-item"> <a class="nav-link active" href="#" data-toggle="modal" data-target=".productview">View Products</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" href="#" data-toggle="modal" (click)="viewProducts('thinkbook products')" data-target=".productview">View Products</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="#"  data-toggle="modal" data-target="#enqiurenow">Enquire Now </a> </li>
         </ul>
             </div>
@@ -47,7 +47,7 @@
     <div class="ml-3">
         <div class="yogabox1">
             <ul class=" products-display12">
-                <li class="nav-item"> <a class="nav-link active" href="#" data-toggle="modal" data-target=".thinkstation">View Products</a> </li>
+                <li class="nav-item"> <a class="nav-link active" href="#" data-toggle="modal" (click)="viewProducts('thinkbook products')" data-target=".thinkstation">View Products</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="#"  data-toggle="modal" data-target="#enqiurenow">Enquire Now </a> </li>
     </ul>
         </div>	
@@ -90,3 +90,6 @@
 </div>
 <app-footer></app-footer>
 </section>
+
+
+
