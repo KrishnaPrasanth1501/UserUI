@@ -17,11 +17,26 @@ export class SolutionsComponent implements OnInit {
       "token":localStorage.getItem('token'),
       "pages":"solutions"
     }
+    this.enterClick(4)
     this.service.post(this.service.inseruservisitpages,data).subscribe(res=>{
       console.log(res)
     },err=>{
       console.log(err)
     })
   }
-
+  
+  enterClick(btn_id:any){
+    var data={
+      "user_id":localStorage.getItem('user_id'),
+      "btn_id":btn_id,
+      "token":localStorage.getItem('token')
+    }
+    this.service.post(this.service.insertuserpoints,data).subscribe(
+      res=>{
+        console.log(res)
+      },
+      err=>{
+        console.log(err)
+      })
+    }
 }

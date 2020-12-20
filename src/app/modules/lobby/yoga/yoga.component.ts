@@ -35,7 +35,20 @@ export class YogaComponent implements OnInit {
     script.defer = true;
     body.appendChild(script);
   }
-
+  enterClick(btn_id:any){
+    var data={
+      "user_id":localStorage.getItem('user_id'),
+      "btn_id":btn_id,
+      "token":localStorage.getItem('token')
+    }
+    this.service.post(this.service.insertuserpoints,data).subscribe(
+      res=>{
+        console.log(res)
+      },
+      err=>{
+        console.log(err)
+      })
+    }
   viewProducts(userdata:string){
     var data={
       "user_id":localStorage.getItem('user_id'),
@@ -47,6 +60,7 @@ export class YogaComponent implements OnInit {
     },err=>{
       console.log(err)
     })
+    this.enterClick(14)
   }
   
 }

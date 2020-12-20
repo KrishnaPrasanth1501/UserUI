@@ -42,7 +42,7 @@ export class ThinkBookComponent implements OnInit {
       "pages":userdata,
       "token":localStorage.getItem('token'),
     }
-    this.enterClick(6)
+    this.enterClick(17)
     this.service.post(this.service.inseruservisitpages,data).subscribe(res=>{
       console.log(res)
     },err=>{

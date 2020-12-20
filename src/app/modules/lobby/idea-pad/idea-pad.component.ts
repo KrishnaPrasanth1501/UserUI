@@ -43,7 +43,9 @@ export class IdeaPadComponent implements OnInit {
       "pages":userdata,
       "token":localStorage.getItem('token'),
     }
-    this.enterClick(6)
+    // this.enterClick(6)
+    this.enterClick(15)
+    
     this.service.post(this.service.inseruservisitpages,data).subscribe(res=>{
       console.log(res)
     },err=>{
