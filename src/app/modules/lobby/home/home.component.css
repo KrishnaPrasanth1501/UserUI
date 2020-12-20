@@ -1,0 +1,148 @@
+
+@media (max-width:1366px){
+    .mainhall-video {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        top: -9px;
+        left: -30px;
+        right: 0;
+        bottom: 0;
+    }
+    .mainhall-video video {
+        width: 254px;
+    }
+
+    .videolobby video {
+        width: 245px;
+        height: 120px;
+        z-index: 0;
+        position: relative;
+    }
+    .videolobby {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        top: 211px;
+    }
+
+
+    .lobby-image-class {
+        width: 100px;
+        height: 100px;
+        /* margin-left: 100px; */
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 164px;
+    }
+    .bottom-buttons-lobby .nav-link {
+        font-size: 15px;
+        color: #fff;
+        background-image: url(../../../../assets/images/b1-01.png);
+        background-size: cover;
+        background-position: center;
+        width: 174px;
+        text-align: center;
+        height: 34.2px;
+        margin-right: 0px;
+        font-family: Gotham-bold;
+        padding: 2px;
+    }
+    .bottom-buttons-lobby {
+        background-color: rgba(0,0,0,39%);
+        padding: 12px;
+        border-radius: 60px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 790px;
+        border-radius: 48.93px;
+        height: 60px;
+    }
+
+
+    video {
+        width: 275px;
+        height: 124px;
+        z-index: 0;
+        position: relative;
+    }
+    .video {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        top: 210px;
+        bottom: 0;
+        left: 6px;
+        right: 0;
+    }
+   
+
+
+
+
+
+
+
+    .lobby-mr-stn {
+        position: absolute;
+        margin-left: 133px;
+        margin-top: 122px;
+    }
+
+.lobby-nav-link {
+    font-size: 17px;
+    color: #fff;
+    background-image: url(../../../../assets/images/b1-01.png);
+    background-size: contain;
+    background-position: center;
+    width: 100px;
+    text-align: center;
+    background-repeat: no-repeat;
+    font-family: Gotham-bold;
+    font-weight: bold;
+    /* height: 181px; */
+}
+.lobby-mr-stn2 {
+    margin-left: 5px;
+    margin-top: 127px;
+    position: absolute;
+}
+.lobby-mr-stn3 {
+    margin-left: -129px;
+    margin-top: 125px;
+    position: absolute;
+}
+.lobby-img-stn3 {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 85px;
+    margin-left: -196px;
+    position: absolute;
+}
+.lobby-mr-stn1 {
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 200px;
+}
+    .message{
+        margin-top: 70px;
+    }
+    .lobby-img-stn {
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 82px;
+        margin-left: 64px;
+        position: absolute;
+    }
+    .bord-b1 {
+        margin-top: 80px!important;
+    }
+}

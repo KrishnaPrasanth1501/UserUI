@@ -1,104 +1,397 @@
+
 @media (max-width:2600px) and (min-width:1700px){
+    .lobby-image-class {
+      width: 100px;
+      height: 100px;
+  
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 355px;
+  }
+  .lobby-mr-stn {
+      position: absolute;
+      margin-left: 20px;
+      margin-top: 126px;
+  }
+  .lobby-img-stn {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 85px;
+      margin-left: -35px;
+      position: absolute;
+  }
+  .lobby-mr-stn2 {
+      margin-left: -8px;
+      margin-top: 131px;
+      position: absolute;
+  }
+  .lobby-mr-stn3 {
+      margin-left: -34px;
+      margin-top: 130px;
+      position: absolute;
+  }
+  .lobby-img-stn2 {
+      width: 130px;
+      height: 130px;
+      text-align: center;
+      margin-top: 90px;
+      margin-left: -65px;
+      float: left;
+      position: absolute;
+  }
+  .lobby-img-stn3 {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 90px;
+      margin-left: -94px;
+      position: absolute;
+  }
+  .lobby-mr-stn1 {
+      margin-left: 5px;
+      margin-top: 85px;
+         color: #fff;
+      background-image: url(../images/b1-01.png);
+      background-size: cover;
+      background-position: center;
+      width: 206px;
+      text-align: center;
+      height: 34.2px;
+      margin-right: 0px;
+      font-family: Gotham-bold;
+      padding: 2px;
+  }
+  
+  
+  
+  .video {
+      position: absolute;
+      margin: 0 auto;
+      text-align: center;
+      justify-content: center;
+      top: 321px;
+      left: 0px;
+      right: 0;
+      bottom: 0;
+  }
+  
+  
+  video {
+      width: 300px;
+      height: auto;
+      z-index: 0;
+      position: relative;
+  }
+  .videolobby {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    /* justify-content: center; */
+    top: 320px;
+    left: 8px;
+    right: 0;
+    bottom: 0;
+}
+.videolobby video {
+    width: 300px;
+    height: auto;
+    z-index: 0;
+    position: relative;
+}
+  
+  
+  } 
+  
+  
+  /* @media (max-width:1920px) and (max-height:1080px)  and (min-width:1700px){
+      .lobby-image-class {
+          width: 100px;
+          height: 100px;
+          margin-left: 100px;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 400px;
+      }
+      .lobby-mr-stn {
+          position: absolute;
+          margin-left: 20px;
+          margin-top: 126px;
+      }
+      .lobby-img-stn {
+          width: 130px;
+          height: 130px;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 85px;
+          margin-left: -35px;
+          position: absolute;
+      }
+      .lobby-mr-stn2 {
+          margin-left: -8px;
+          margin-top: 131px;
+          position: absolute;
+      }
+      .lobby-mr-stn3 {
+          margin-left: -34px;
+          margin-top: 130px;
+          position: absolute;
+      }
+      .lobby-img-stn2 {
+          width: 130px;
+          height: 130px;
+          text-align: center;
+          margin-top: 90px;
+          margin-left: -65px;
+          float: left;
+          position: absolute;
+      }
+      .lobby-img-stn3 {
+          width: 130px;
+          height: 130px;
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 90px;
+          margin-left: -94px;
+          position: absolute;
+      }
+      .lobby-mr-stn1 {
+          margin-left: 5px;
+          margin-top: 85px;
+             color: #fff;
+          background-image: url(../images/b1-01.png);
+          background-size: cover;
+          background-position: center;
+          width: 206px;
+          text-align: center;
+          height: 34.2px;
+          margin-right: 0px;
+          font-family: Gotham-bold;
+          padding: 2px;
+      }
+  } */
+  
+  @media (max-width:1440px){
+      
+      .lobby-image-class {
+          width: 100px;
+          height: 100px;
+          /* margin-left: 100px; */
+          margin: 0 auto;
+          text-align: center;
+          margin-top: 292px;
+      }
+      .bord-b1 {
+          padding: 75px 0px!important;
+          width: 693px;
+          height: 340px;
+          margin-top: 100px!important;
+      }
+      .flip-clock__piece {
+          margin: 0 14.5px;
+      }
+      .loginpage {
+          background-position: top left;
+      }
+  
+      
   .lobby-image-class {
-    width: 100px;
-    height: 100px;
-    /* margin-left: 100px; */
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 400px;
-}
-.lobby-mr-stn {
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 126px;
-}
-.lobby-img-stn {
-    width: 130px;
-    height: 130px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 85px;
-    margin-left: -35px;
-    position: absolute;
-}
-.lobby-mr-stn2 {
-    margin-left: -8px;
-    margin-top: 131px;
-    position: absolute;
-}
-.lobby-mr-stn3 {
-    margin-left: -34px;
-    margin-top: 130px;
-    position: absolute;
-}
-.lobby-img-stn2 {
-    width: 130px;
-    height: 130px;
-    text-align: center;
-    margin-top: 90px;
-    margin-left: -65px;
-    float: left;
-    position: absolute;
-}
-.lobby-img-stn3 {
-    width: 130px;
-    height: 130px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 90px;
-    margin-left: -94px;
-    position: absolute;
-}
-.lobby-mr-stn1 {
-    margin-left: 5px;
-    margin-top: 85px;
-       color: #fff;
-    background-image: url(../images/b1-01.png);
-    background-size: cover;
-    background-position: center;
-    width: 206px;
-    text-align: center;
-    height: 34.2px;
-    margin-right: 0px;
-    font-family: Gotham-bold;
-    padding: 2px;
-}
-}
+      width: 100px;
+      height: 100px;
+      margin-left: 100px;
+      margin: 0 auto;
+          margin-top: 0px;
+      text-align: center;
+      margin-top: 224px;
+  }
+  
+  .lobby-nav-link {
+      font-size: 12px;
+      color: #fff;
+      background-image: url(../images/b1-01.png);
+      background-size: contain;
+      background-position: center;
+      width: 97px;
+      text-align: center;
+      background-repeat: no-repeat;
+      font-family: Gotham-bold;
+      font-weight: bold;
+      height: 51px;
+  }
+  /* .lobby-mr-stn {
+      position: absolute;
+      margin-left: 94px;
+      margin-top: 120px;
+  } */
+  
+  .lobby-mr-stn2 {
+      margin-left: 10px;
+      margin-top: 125px;
+      position: absolute;
+  }
+  .lobby-mr-stn {
+      position: absolute;
+      margin-left: 123px;
+      margin-top: 120px;
+  }
+  .lobby-img-stn {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto;
+      
+      text-align: center;
+      margin-top: 90px;
+      margin-left: 60px;
+      position: absolute;
+  }
+  .lobby-img-stn2 {
+      width: 110px;
+      height: 110px;
+      text-align: center;
+      margin-top: 95px;
+      margin-left: -50px;
+      float: left;
+      position: absolute;
+  }
+  
+  .lobby-img-stn3 {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto;
+          margin-top: 0px;
+          margin-left: auto;
+      text-align: center;
+      margin-top: 95px;
+      margin-left: -175px;
+      position: absolute;
+  }
+  .lobby-mr-stn3 {
+      margin-left: -116px;
+      margin-top: 125px;
+      position: absolute;
+  }
+  .lobby-mr-stn1 {
+      margin-left: 125px;
+      margin-top: 28px;
+      width: 135px;
+      background-size: cover;
+  }
+  video {
+      width: 278px;
+      height: 127px;
+      z-index: 0;
+      position: relative;
+  }
+  .video {
+      position: absolute;
+      margin: 0 auto;
+      text-align: center;
+      justify-content: center;
+      top: 266px;
+      left: 8px;
+      right: 0;
+      bottom: 0;
+  }
+  
+  
+  
+  
+  
+  }
+  
 
 
-@media (max-width:1440px){
-    
+
+@media (max-width:1366px){
+    .mainhall-video {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        top: -9px;
+        left: -30px;
+        right: 0;
+        bottom: 0;
+    }
+    .mainhall-video video {
+        width: 254px;
+    }
+
+    .videolobby video {
+        width: 245px;
+        height: 120px;
+        z-index: 0;
+        position: relative;
+    }
+    .videolobby {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        top: 211px;
+    }
+
+
     .lobby-image-class {
         width: 100px;
         height: 100px;
         /* margin-left: 100px; */
         margin: 0 auto;
         text-align: center;
-        margin-top: 292px;
+        margin-top: 164px;
     }
-    .bord-b1 {
-        padding: 75px 0px!important;
-        width: 693px;
-        height: 340px;
-        margin-top: 100px!important;
+    .bottom-buttons-lobby .nav-link {
+        font-size: 15px;
+        color: #fff;
+        background-image: url(../images/b1-01.png);
+        background-size: cover;
+        background-position: center;
+        width: 174px;
+        text-align: center;
+        height: 34.2px;
+        margin-right: 0px;
+        font-family: Gotham-bold;
+        padding: 2px;
     }
-    .flip-clock__piece {
-        margin: 0 14.5px;
+    .bottom-buttons-lobby {
+        background-color: rgba(0,0,0,39%);
+        padding: 12px;
+        border-radius: 60px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 790px;
+        border-radius: 48.93px;
+        height: 60px;
     }
-    .loginpage {
-        background-position: top left;
+
+
+    video {
+        width: 275px;
+        height: 124px;
+        z-index: 0;
+        position: relative;
+    }
+    .video {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        top: 210px;
+        bottom: 0;
+        left: 6px;
+        right: 0;
     }
    
-}
-@media (max-width:1366px){
-    .lobby-image-class {
-        width: 100px;
-        height: 100px;
-        /* margin-left: 100px; */
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 212px;
-    }
+
+
+
+
+
+
+
     .lobby-mr-stn {
         position: absolute;
         margin-left: 133px;

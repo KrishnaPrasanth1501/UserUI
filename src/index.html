@@ -8,89 +8,167 @@
 	<link rel="stylesheet" href="./assets/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/css/master.css">
-	<link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="stylesheet" href="./assets/css/responsive1.css">
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+<body>
+  <app-root></app-root>
+  <script src="https://chatwee-api.com/v2/script/5fda2bf5746ed6272a1475b2.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    
-  (function($) {
-    //Function to animate slider captions
-    function doAnimations(elems) {
-      //Cache the animationend event in a variable
-      var animEndEv = "webkitAnimationEnd animationend";
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
   
-      elems.each(function() {
-        var $this = $(this),
-          $animationType = $this.data("animation");
-        $this.addClass($animationType).one(animEndEv, function() {
-          $this.removeClass($animationType);
-        });
-      });
-    }
-  
-    //Variables on page load
-    var $myCarousel = $("#carouselExampleIndicators"),
-      $firstAnimatingElems = $myCarousel
-        .find(".carousel-item:first")
-        .find("[data-animation ^= 'animated']");
-  
-    //Initialize carousel
-    $myCarousel.carousel();
-  
-    //Animate captions in first slide on page load
-    doAnimations($firstAnimatingElems);
-  
-    //Other slides to be animated on carousel slide event
-    $myCarousel.on("slide.bs.carousel", function(e) {
-      var $animatingElems = $(e.relatedTarget).find(
-        "[data-animation ^= 'animated']"
-      );
-      doAnimations($animatingElems);
-    });
-  })(jQuery);
-  
-  
-  
-  
-  $('.ml11 .letters').each(function() {
-      $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-    });
-    anime.timeline({
-      loop: false
-    }).add({
-      targets: '.ml11 .line',
-      scaleY: [0, 1],
-      opacity: [0.5, 1],
-      easing: "easeOutExpo",
-      duration: 700
-    }).add({
-      targets: '.ml11 .line',
-      translateX: [0, $(".ml11 .letters").width()],
-      easing: "easeOutExpo",
-      duration: 700,
-      delay: 100
-    }).add({
-      targets: '.ml11 .letter',
-      opacity: [0, 1],
-      easing: "easeOutExpo",
-      duration: 600,
-      offset: '-=775',
-      delay: function(el, i) {
-        return 34 * (i + 1)
+	<script>
+		var video = document.getElementById("mp4");
+		var spinner = document.getElementById("spinner");
+		var delayMillis = 0;
+		var spinnerIsHere = 1;
+		video.volume = 0;
+
+		var playVid = setTimeout(function() {
+		  if(spinnerIsHere == 1) {
+			// Delete element DOM
+			// spinner.parentNode.removeChild(spinner);
+			spinner.style.visibility = "hidden";
+			spinnerIsHere = 0;
+		  }
+		  video.play();
+		}, delayMillis);
+
+		video.addEventListener("click", function( event ) {
+		  if(video.paused) {
+			if(spinnerIsHere == 1) {
+			  // Delete element DOM
+			  // spinner.parentNode.removeChild(spinner);
+			  spinner.style.visibility = "hidden";
+			  spinnerIsHere = 0;
+			}
+			clearTimeout(playVid);
+			video.play();
+		  } else {
+			video.pause();
+			if(spinnerIsHere == 0) {
+			  spinner.style.visibility = "visible";
+			  spinnerIsHere = 1;
+			}
+		  }
+		}, false);</script>
+
+<script>
+  $("form[name='eniqueryform']").validate({
+    rules: {
+      Name: "required",
+      email: {
+        required: true,
+        email: true
+      },
+      company: "required",
+      jobtitle: "required",
+      phone: {
+        required: true,
+        digits: true,
+        minlength: 10,
+        maxlength: 10
+      },
+      country: "required",
+      product: "required"
+    },
+    messages: {
+      Name: {
+        required: "Name and Surname Required."
+      },
+      email: "Please enter a valid email address",
+      jobtitle: "Please Enter Your Job Title",
+      phone: {
+        required: "Please enter phone number",
+        digits: "Please enter valid phone number",
+        minlength: "Phone number field accept only 10 digits",
+        maxlength: "Phone number field accept only 10 digits"
+      },
+      company: "Company Name is Required",
+      country: "Country Name is Required",
+      product: {
+        required: "Please Select Product"
       }
-    }).add({
-      targets: '.ml11',
-      duration: 1000,
-      easing: "easeOutExpo",
-      delay: 1000
-    });
-    </script>
+  
+    }
+  })
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	var video1 = document.getElementById("mp41");
+	var spinner1 = document.getElementById("spinner1");
+	var delayMillis1 = 0;
+	var spinnerIsHere1 = 1;
+	video1.volume = 0;
+
+	var playVid1 = setTimeout(function() {
+	  if(spinnerIsHere1 == 1) {
+		// Delete element DOM
+		// spinner.parentNode.removeChild(spinner);
+		spinner1.style.visibility = "hidden";
+		spinnerIsHere1 = 0;
+	  }
+	  video1.play();
+	}, delayMillis1);
+
+	video1.addEventListener("click", function( event ) {
+	  if(video1.paused) {
+		if(spinnerIsHere1 == 1) {
+		  // Delete element DOM
+		  // spinner.parentNode.removeChild(spinner);
+		  spinner1.style.visibility = "hidden";
+		  spinnerIsHere1 = 0;
+		}
+		clearTimeout(playVid1);
+		video1.play();
+	  } else {
+		video1.pause();
+		if(spinnerIsHere1 == 0) {
+		  spinner1.style.visibility = "visible";
+		  spinnerIsHere1 = 1;
+		}
+	  }
+	}, false);</script>
+
+
+
+
+
+		<script>
+			var viewcount = localStorage.getItem('view')
+			if (viewcount == 0) {
+				$('#videopopup').modal('show');
+			}
+			window.onbeforeunload = (function () {
+    localStorage.setItem('view', 1);
+
+    return null;
+  })()
+// setTimeout(function(){ $('#videopopup').modal('hide'); }, 95000);
+		</script>
+  
     <!-- <script>
       console.log(new Date())
           if (new Date() < new Date('Dec 06 2020 10:35:00 GMT+0530')) {
@@ -104,7 +182,7 @@
           }
     </script> -->
     
-    <script>
+    <!-- <script>
       var video = document.getElementById("mp4");
       var spinner = document.getElementById("spinner");
       var delayMillis = 0;
@@ -138,9 +216,19 @@
           spinnerIsHere = 1;
         }
         }
-      }, false);</script>
-</head>
-<body>
-  <app-root></app-root>
+      }, false);</script> -->
+      <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5fdec7c1a8a254155ab4e1bd/1epv3ok0f';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+     </script>
+  <script data-cfasync="false" type="text/javascript" src="./assets/js/form-submission-handler.js"></script>
+
 </body>
 </html>

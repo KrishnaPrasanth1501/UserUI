@@ -1,7 +1,7 @@
 @media (max-width:2600px) and (min-width:1700px){
 
     .image-class{
-        margin-top: 171px;
+        margin-top: 180px;
     }
    .lenovadiv1{
        margin-top: 80px;
@@ -118,6 +118,7 @@
     margin-left: 50px;
 }
 
+
 .yogabox {
     background-color: rgba(0,0,0,0.4);
     /* padding: 5px 0px 5px 5px; */
@@ -150,6 +151,306 @@
     padding: 0px;
 }
 
+.yogapage .yogabox {
+    text-align: center;
+    margin: 355px 0 10px 100px;
+}
+.yogapage .yogabox2 {
+  
+    text-align: center;
+    margin: 355px 0 10px 172px;
+}
+
+.video1 video {
+    width: 251px;
+    height: 313px;
+    z-index: 0;
+    position: relative;
+}
+.video1 {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    top: 355px;
+    left: -2px;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+/* thinkpad */
+.thinkpad .yogabox .products-display12 li .nav-link {
+
+    width: 96.688px;
+    background-size: contain;
+    font-size: 6.57pt;
+    line-height: 29px;
+    height: 25.3px;
+   
+}
+
+.thinkpad .yogabox {
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px 0px 5px 4px;
+    border-radius: 7.27px;
+    width: 103px;
+    height: 75px;
+    text-align: center;
+    margin: 345px auto 0px -49px;
+}
+
+
+.thinkpad .yogabox1 {
+    background-color: rgba(0,0,0,0.4);
+    /* padding: 5px 0px 5px 5px; */
+    border-radius: 7.27px;
+    width: 98px;
+    height: 75px;
+    text-align: center;
+    margin: 345px auto 0px 41px;
+}
+
+.thinkpad .yogabox1 .products-display12 li .nav-link {
+    font-family: Gotham-bold;
+    padding: 0px;
+    width: 91.688px;
+    background-size: contain;
+    font-size: 6.57pt;
+    line-height: 29px;
+    height: 25.3px;
+}
+.thinkpad .yogabox1 {
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px 0px 5px 2px;
+    border-radius: 7.27px;
+    width: 95px;
+    height: 75px;
+    text-align: center;
+    margin: 345px auto 0px 43px;
+}
+.video2 video {
+    width: 260px;
+    height: 313px;
+    z-index: 0;
+    position: relative;
+}
+.video2 {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    top: 355px;
+    left: -13px;
+    right: 0;
+    bottom: 0;
+}
+.thinkpad .yogabox3 {
+    background-color: rgba(0,0,0,0.4);
+    padding: 5px 0px 5px 3px;
+    border-radius: 7.27px;
+    width: 90px;
+    height: 75px;
+    text-align: center;
+    margin: 345px 0px 54px 72px;
+}
+
+
+.thinkpad .yogabox3 .products-display12 li .nav-link {
+    background-image: url(../images/pro2-01.png);
+    background-repeat: no-repeat;
+   
+    width: 83.688px;
+    background-size: contain;
+    font-size: 6.57pt;
+    line-height: 28px;
+    height: 25.3px;
+}
+.thinkpad .yogabox4 .products-display12 li .nav-link {
+    background-image: url(../images/pro2-01.png);
+    background-repeat: no-repeat;
+    font-family: Gotham-bold;
+    padding: 0px;
+    width: 90.688px;
+    background-size: contain;
+    font-size: 6.57pt;
+    line-height: 29px;
+    height: 25.3px;
+}
+.thinkpad .yogabox4 {
+    background-color: rgba(0,0,0,0.4);
+   
+    padding: 5px 0px 5px 3px;
+    border-radius: 7.27px;
+    width: 99px;
+    height: 75px;
+    text-align: center;
+    margin: 345px 0px 54px 71px;
+}
+
+
+
+
+.legionbooth .yogabox .products-display12 li .nav-link {
+    background-image: url(../images/pro2-01.png);
+    background-repeat: no-repeat;
+    width: 135.688px;
+    background-size: contain;
+    font-size: 8.57pt;
+    line-height: 34px;
+    height: 29.3px;
+    font-family: Gotham-bold;
+    padding: 0px;
+}
+.legionbooth .yogabox {
+    background-color: rgba(0,0,0,0.4);
+    /* padding: 5px 0px 5px 5px; */
+    border-radius: 7.27px;
+    width: 135px;
+    height: 77px;
+    text-align: center;
+    margin: 294px auto 0px 116px;
+    /* padding-top: 3px; */
+}
+.video3 video {
+    width: 328px;
+    height: 148px;
+    z-index: 0;
+    position: relative;
+}
+.video3 {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    top: 385px;
+    left: -65px;
+    right: 0;
+    bottom: 0;
+}
+.legionbooth .yogabox2 .products-display12 li .nav-link {
+    background-image: url(../images/pro2-01.png);
+    background-repeat: no-repeat;
+    width: 135.688px;
+    background-size: contain;
+    font-size: 8.57pt;
+    line-height: 34px;
+    height: 29.3px;
+    font-family: Gotham-bold;
+    padding: 0px;
+}
+.legionbooth .yogabox2 {
+    background-color: rgba(0,0,0,0.4);
+    /* padding: 5px 0px 5px 5px; */
+    border-radius: 7.27px;
+    width: 135px;
+    height: 77px;
+    text-align: center;
+    margin: 294px auto 0px 82px;
+    /* padding-top: 3px; */
+}
+.thinkbook {
+    background-image: url(../images/thinkbook.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.thinkbooth .yogabox .products-display12 li .nav-link {
+    background-image: url(../images/pro2-01.png);
+    background-repeat: no-repeat;
+    width: 135.688px;
+    background-size: contain;
+    font-size: 8.57pt;
+    line-height: 34px;
+    height: 29.3px;
+    font-family: Gotham-bold;
+    padding: 0px;
+}
+.thinkbook .yogabox {
+    background-color: rgba(0,0,0,0.4);
+    /* padding: 5px 0px 5px 5px; */
+    border-radius: 7.27px;
+    width: 135px;
+    height: 77px;
+    text-align: center;
+    margin: 294px auto 0px 65px;
+    /* padding-top: 3px; */
+}
+.thinkbooth .yogabox1 .products-display12 li .nav-link {
+    background-image: url(../images/pro2-01.png);
+    background-repeat: no-repeat;
+    width: 135.688px;
+    background-size: contain;
+    font-size: 8.57pt;
+    line-height: 34px;
+    height: 29.3px;
+    font-family: Gotham-bold;
+    padding: 0px;
+}
+.thinkbook .yogabox1 {
+    background-color: rgba(0,0,0,0.4);
+    /* padding: 5px 0px 5px 5px; */
+    border-radius: 7.27px;
+    width: 135px;
+    height: 77px;
+    text-align: center;
+    margin: 293px auto 0px -192px;
+    /* padding-top: 3px; */
+}
+.video-book video {
+    width: 260px;
+    height: 207px;
+    z-index: 0;
+    position: relative;
+}
+.video-book {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    top: 355px;
+    left: 6px;
+    right: 0;
+    bottom: 0;
+}
+.ondemandbox {
+    background-color: rgba(0,0,0, 61%);
+    /* width: 1024px; */
+    justify-content: center;
+    margin: auto;
+    color: #fff;
+    padding: 20px;
+    height: 650px!important;
+    overflow-y: scroll;
+    border-radius: 13.52px;
+}
+
+
+
+
+.mainhall-video {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    top: 103px;
+    left: -74px;
+    right: 0;
+    bottom: 0;
+}
+.mainhall-video video {
+    width: 349px;
+    /* height: 159px; */
+    z-index: 0;
+    position: relative;
+}
+
+
 
 }
 @media (max-width:1560px) and (min-width:1480px){
@@ -161,13 +462,13 @@
     }
 }
 
-@media (max-width:1440px){
-    .yogabox{
+@media (max-width:1440px) {
+    /* .yogabox{
         margin-top: 251px;
-    }
-    .yogabox2{
+    } */
+    /* .yogabox2{
         margin-top: 253px;
-    }
+    } */
 
     .lenovo-tetimg {
         width: 75%;
@@ -218,6 +519,293 @@
         margin-top: 0px;
         margin-left: -107px;
     }
+
+    .resmar3{
+        margin-left: 173px;
+    }
+    .resmar1{
+        margin-left: 140px;
+    }
+    .resmar2{
+        margin-left: 95px;
+    }
+    .resmar2{
+        margin-left: 70px;
+    }
+  
+    .mainhall-video {
+        width: 257px;
+        height: 207px;
+        z-index: 0;
+        position: relative;
+    }
+      
+    .mainhall-video .video {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        top: 10%;
+        left: -56px;
+        right: 0;
+        bottom: 0;
+    }
+    .image-class {
+        width: 100px;
+        height: 100px;
+        margin-left: 100px;
+        margin: 0 auto;
+            margin-top: 0px;
+        text-align: center;
+        margin-top: 170px;
+    }
+    
+
+    .yogapage .yogabox {
+        background-color: rgba(0,0,0,0.4);
+        padding: 5px 0px 5px 5px;
+        border-radius: 7.27px;
+        width: 100px;
+        height: 65px;
+        text-align: center;
+        margin: 210px 0 10px 205px;
+    }
+    .yogapage .products-display12 li .nav-link {
+        background-image: url(../images/pro2-01.png);
+        background-repeat: no-repeat;
+        width: 99.688px;
+        background-size: contain;
+        font-size: 7.57pt;
+        line-height: 27px;
+        height: 23.3px;
+        font-family: Gotham-bold;
+        padding: 0px;
+    }
+    .yogapage .yogabox2 {
+        background-color: rgba(0,0,0,0.4);
+        padding: 5px 0px 5px 5px;
+        border-radius: 7.27px;
+        width: 100px;
+        height: 65px;
+        text-align: center;
+        margin: 210px 0 10px 64px;
+    }
+    
+    .video1 video {
+        width: 185px;
+        height: 145px;
+        z-index: 0;
+        position: relative;
+    }
+    
+    
+    .video1 {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        top: 304px;
+        left: -2px;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .thinkpad .yogabox {
+        background-color: rgba(0,0,0,0.4);
+        padding: 1px 0px 5px 3px;
+        border-radius: 7.27px;
+        width: 85px;
+        height: 53px;
+        text-align: center;
+        margin: 200px auto 0px 104px;
+    }
+    /* .thinkpad .yogabox .products-display12 li .nav-link {
+        background-image: url(../images/pro2-01.png);
+        background-repeat: no-repeat;
+        width: 65.688px;
+        background-size: contain;
+        font-size: 6.2pt;
+        line-height: 19px;
+        height: 18.3px;
+        font-family: Gotham-bold;
+        padding: 0px;
+    } */
+    .thinkpad .yogabox .products-display12 li .nav-link {
+        background-image: url(../images/pro2-01.png);
+        background-repeat: no-repeat;
+        width: 82.688px;
+        background-size: contain;
+        font-size: 7.0pt;
+        line-height: 19px;
+        height: 18.3px;
+        font-family: Gotham-bold;
+        padding: 0px;
+    }
+    
+    .thinkpad .yogabox1 {
+        background-color: rgba(0,0,0,0.4);
+        padding: 1px 0px 5px 3px;
+        border-radius: 7.27px;
+        width: 70px;
+        height: 53px;
+        text-align: center;
+        margin: 200px auto 0px 26px;
+    }
+    
+  
+    .thinkpad .yogabox1 .products-display12 li .nav-link {
+        background-image: url(../images/pro2-01.png);
+        background-repeat: no-repeat;
+        width: 72.688px;
+        background-size: contain;
+        font-size: 7.0pt;
+        line-height: 19px;
+        height: 18.3px;
+        font-family: Gotham-bold;
+        padding: 0px;
+    }
+    
+    
+
+
+    
+    
+    .thinkpad .yogabox3 {
+        background-color: rgba(0,0,0,0.4);
+        padding: 5px 0px 5px 5px;
+        border-radius: 7.27px;
+        width: 77px;
+        height: 53px;
+        text-align: center;
+        margin: 200px auto 0px -6px;
+    }
+    .thinkpad .yogabox3 .products-display12 li .nav-link {
+        background-image: url(../images/pro2-01.png);
+        background-repeat: no-repeat;
+        width: 76.688px;
+        background-size: contain;
+        font-size: 7.0pt;
+        line-height: 21px;
+        height: 18.3px;
+        font-family: Gotham-bold;
+        padding: 0px;
+    }
+
+
+    .thinkpad .yogabox4 {
+        background-color: rgba(0,0,0,0.4);
+        padding: 5px 0px 5px 5px;
+        border-radius: 7.27px;
+        width: 83px;
+        height: 53px;
+        text-align: center;
+        margin: 200px auto 0px 37px;
+    }
+
+    .thinkpad .yogabox4 .products-display12 li .nav-link {
+        background-image: url(../images/pro2-01.png);
+        background-repeat: no-repeat;
+        width: 80.688px;
+        background-size: cover;
+        font-size: 7.0pt;
+        line-height: 21px;
+        height: 18.3px;
+        font-family: Gotham-bold;
+        padding: 0px;
+    }
+    .video2 video {
+        width: 195px;
+        height: 145px;
+        z-index: 0;
+        position: relative;
+    }
+    
+    
+    .video2 {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        top: 304px;
+        left: -11px;
+        right: 0;
+        bottom: 0;
+    }
+
+    .legionbooth .yogabox {
+        margin-top: 195px;
+        margin-left: 144px;
+    }
+    .legionbooth .yogabox2 {
+        margin-top: 195px;
+        margin-left: 44px;
+    }
+    .video3 {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        top: 297px;
+        left: -50px;
+        right: 0;
+        bottom: 0;
+    }
+    .video3 video {
+        width: 192px;
+        height: 140px;
+        z-index: 0;
+        position: relative;
+    }
+    .thinkbook .yogabox {
+        background-color: rgba(0,0,0,0.4);
+        padding: 5px 0px 5px 5px;
+        border-radius: 7.27px;
+        width: 115px;
+        height: 70px;
+        text-align: center;
+        margin: 200px auto 0px 189px;
+        padding-top: 3px;
+    }
+
+    .thinkbook .yogabox1 {
+        background-color: rgba(0,0,0,0.4);
+        padding: 5px 0px 5px 5px;
+        border-radius: 7.27px;
+        width: 115px;
+        height: 70px;
+        text-align: center;
+        margin: 200px 180px 0px 0px;
+        padding-top: 3px;
+    }
+
+    .thinkbook .products-display12 li .nav-link {
+        background-image: url(../images/pro2-01.png);
+        background-repeat: no-repeat;
+        width: 114.688px;
+        background-size: contain;
+        font-size: 8.57pt;
+        line-height: 28px;
+        height: 26.3px;
+        font-family: Gotham-bold;
+        padding: 0px;
+    }
+    .video-book {
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        top: 304px;
+        left: 5px;
+        right: 0;
+        bottom: 0;
+    }
+    .video-book video {
+        width: 190px;
+        height: 145px;
+        z-index: 0;
+        position: relative;
+    }
+
 }
 @media (max-width:1400px){
     .mr-stn {
@@ -247,6 +835,23 @@
 }
 
 @media (max-width:1366px) and (max-height:768px){
+
+    .lenovadiv3 {
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+        width: 250px;
+    }
+    .message {
+        margin-top: 50px!important;
+    }
+
+
+
+
+
+
+
     .yogabox {
         border-radius: 7.27px;
         width: 106px;
@@ -303,8 +908,8 @@
     }
   
     .bord-b1 {
-        margin-top: 80px!important;
-    }
+    margin-top: 40px!important;
+}
     /* .image-class {
         margin-top: 163px;
         margin-left: 177px;
@@ -325,20 +930,104 @@
     }
     .resmar2 {
         margin-left: 85px!important;
-        margin-top: 175px!important;
+        margin-top: 118px!important;
     }
     .resmar1{
-        margin-top: 175px;
+        margin-top: 118px;
     }
-    .resmar3{
-        margin-top: 160px;
+    .resmar3 {
+        margin-top: 100px;
     }
     .resmar4{
-        margin-top: 160px;
+        margin-top: 118px;
         margin-left: 50px;
     }
     .img-stn3 {
         margin-left: -95px;
         margin-top: 7px;
     }
+    .yogapage .products-display12 li .nav-link {
+        width: 100.688px;
+        line-height: 24px;
+    }
+    .yogapage .yogabox {
+        width: 100px;
+        height: 63px;
+        margin: 190px 0 10px 215px;
+    }
+    .yogapage .yogabox2 {
+        width: 102px;
+        height: 63px;
+        margin: 187px 0 10px 49px;
+    }
+    .bottom-buttons-lobby .nav-link {
+        font-size: 15px;
+        color: #fff;
+        background-image: url(../images/b1-01.png);
+        background-size: cover;
+        background-position: center;
+        width: 174px;
+        text-align: center;
+        height: 34.2px;
+        margin-right: 0px;
+        font-family: Gotham-bold;
+        padding: 2px;
+    }
+    .bottom-buttons-lobby {
+        background-color: rgba(0,0,0,39%);
+        padding: 12px;
+        border-radius: 60px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        width: 790px;
+        border-radius: 48.93px;
+        height: 60px;
+    }
+    .ondemandbox {
+        height: 400px;
+     }
+     .video1 video {
+        width: 179px;
+        height: 135px;
+    }
+    .video1 {
+        top: 295px;
+    }
+    .thinkbook .products-display12 li .nav-link {
+        width: 104.688px;
+        background-size: contain;
+        font-size: 8.57pt;
+        line-height: 28px;
+        height: 24.3px;
+    }
+    .thinkbook .yogabox {
+        border-radius: 7.27px;
+        width: 106px;
+        height: 67px;
+        margin-top: 188px;
+        margin-left: 204px;
+    }
+    .thinkbook .yogabox1 {
+        width: 105px;
+        height: 70px;
+        margin-top: 188px;
+        margin-right: 194px;
+}
+.video-book video {
+    width: 181px;
+    height: 140px;
+    z-index: 0;
+    position: relative;
+}
+.video-book {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    top: 290px;
+    left: 4px;
+    right: 0;
+    bottom: 0;
+}
 }

@@ -115,7 +115,7 @@ header {
 	height: 50px;
 	margin-right: 20px;
 	font-family: Gotham-bold;
-	
+
 }
 .mar-right-10{
 	margin-right: 20px;
@@ -287,7 +287,7 @@ margin: 0;
 }
 .brand-day{
 	font-size: 50px;
-	font-weight: 600;	
+	font-weight: 600;
 	letter-spacing: 1.5px;
 }
 .float {
@@ -361,9 +361,6 @@ color:#fff!important;
 .modal-header .close {
     padding: 0rem 0rem;
     margin: -3rem -3rem -1rem auto;
-}
-.modal-backdrop{
-    z-index:99;
 }
 
 .requestcallform .form-control:focus{
@@ -574,7 +571,7 @@ width: 40%;
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
-	
+
 }
 .bottom-buttons ul li{
 	list-style: none;
@@ -702,7 +699,7 @@ width: 40%;
 	background-position: top;
 }
 .lobby{
-	background-image: url('../images/lobby.png');
+	background-image: url('../images/final_lobby_page.png');
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 100vh;
@@ -844,6 +841,13 @@ width: 40%;
 
 
 
+.videolobby-auto{
+
+    width: 100%;
+    height:auto;
+}
+
+
 
 
 
@@ -974,20 +978,20 @@ color:#fff!important;
 	width: 10px;
 	padding-left:10px;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 5px #ddd; 
+	box-shadow: inset 0 0 5px #ddd;
 	border-radius: 10px;
 	margin-top: 20px;
   }
-   
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
-	background: #6d6d6d; 
+	background: #6d6d6d;
 	border-radius: 10px;
   }
-  
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
 	background: #6d6d6d;
@@ -995,13 +999,13 @@ color:#fff!important;
   .scrollx .modal-content{
 	  /* overflow-y: hidden; */
 
-	  
+
 	height: auto!important;
   }
-    
+
   /* Track */
   .scrollx::-webkit-scrollbar-track {
-	box-shadow: inset 0 0 5px #ddd; 
+	box-shadow: inset 0 0 5px #ddd;
 	border-radius: 10px;
 	margin-top: 20px;
   }
@@ -1116,7 +1120,7 @@ color:#fff!important;
     border: 2px solid #000!important;
     position: relative;
     z-index: 99;
-	
+
 }
 .fontsize{
 	font-size: 16px;
@@ -1199,7 +1203,7 @@ color:#fff!important;
 }
 .lenovo-tetimg img{
 	padding-top: 20px;
-	
+
 	/* margin-top: 20px; */
 }
 .login-title span{
@@ -1396,7 +1400,7 @@ padding: 0;
     height: 53px;
     text-align: center;
     margin: 243px auto 0px 34px;
-   
+
 }
 .thinkpad .yogabox1 .products-display12 li .nav-link {
     background-image: url(../images/pro2-01.png);
@@ -1417,7 +1421,7 @@ padding: 0;
     height: 53px;
     text-align: center;
     margin: 243px auto 0px 23px;
-   
+
 }
 .thinkpad .yogabox3 .products-display12 li .nav-link {
     background-image: url(../images/pro2-01.png);
@@ -1438,7 +1442,7 @@ padding: 0;
     height: 53px;
     text-align: center;
     margin: 243px auto 0px 55px;
-   
+
 }
 .thinkpad .yogabox4 .products-display12 li .nav-link {
     background-image: url(../images/pro2-01.png);
@@ -1554,11 +1558,22 @@ padding: 0;
 }
 
 
-video {
-    width: 320px;
-    height: 238px;
+
+.videolobby video {
+    width: 313px;
+    height: 140px;
     z-index: 0;
     position: relative;
+}
+.videolobby {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    top: 257px;
+    left: 8px;
+    right: 0;
+    bottom: 0;
 }
 .video1 video{
     width: 210px;
@@ -1763,4 +1778,136 @@ video {
 .modal-header .close1 {
     padding: 0rem 0rem;
     margin: -3rem -3rem -1rem auto;
+}
+
+.thankyou_message {
+	display: block;
+	height: 54.5vh;
+}
+
+.thankyou_message h2 {
+	padding-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.iframe-container {    
+    padding-bottom: 60%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+.solutionbtnlist{
+    width: 35%;
+}
+.solutionbtnlist ul{
+    padding-left: 0;
+}
+
+
+
+.bgoption{
+    background-color: #2F6197;
+    color: #fff;
+}
+option{
+    color: #000;
+}
+
+
+
+
+.pdfform .close {
+    float: right;
+    font-size: 1.5rem;
+    /* font-weight: 700; */
+    line-height: 0;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 1;
+    background: #fff!important;
+    border-radius: 50%;
+    width: 35px!important;
+    height: 35px;
+    margin-left: -108px!important;
+    margin: -3px -10px!important;
+    padding: 10px;
+    right: 0;
+    position: absolute;
+    border: 2px solid #000!important;
+    z-index: 9999;
+}
+.pdfform .close span {
+   margin-left: -2px;
+}
+.pdfform .modal-header{
+    border-bottom: none;
+}
+
+.mainhall-video {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    top: 80px;
+    left: -63px;
+    right: 0;
+    bottom: 0;
+}
+.mainhall-video video{
+    width: 294px;
+    /* height: 159px; */
+    z-index: 0;
+    position: relative;
+}
+
+
+
+
+
+
+.vediopopauto .close {
+    float: right;
+    font-size: 1.5rem;
+    /* font-weight: 700; */
+    line-height: 0;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 1;
+    background: #fff!important;
+    border-radius: 50%;
+    width: 35px!important;
+    height: 35px;
+    /* margin-left: -108px!important; */
+    margin: 0px!important;
+    margin-right: -12px!important;
+    /* padding: 8px; */
+    border: 2px solid #000!important;
+    position: absolute;
+    z-index: 99;
+    right: 0;
 }
