@@ -14,9 +14,12 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
   logout(){
+    var d=new Date()
     var data={
-      "user_id":localStorage.getItem('user_id')
+      "user_id":localStorage.getItem('user_id'),
+      "logouttime":""+d
     }
+    console.log(data)
     this.service.post(this.service.logout,data).subscribe(
       res=>{
         console.log(res)

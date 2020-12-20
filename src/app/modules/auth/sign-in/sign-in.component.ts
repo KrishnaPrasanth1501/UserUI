@@ -19,9 +19,11 @@ export class SignInComponent implements OnInit {
     }
 
     SignIn(){
+      var d = new Date();
       var data={
         "username":this.fullName,
-        "email":this.email
+        "email":this.email,
+        "logintime":d
       }
       if(this.nonEmpty()){
         this.service.post(this.service.user_signIn,data).subscribe(res=>{
