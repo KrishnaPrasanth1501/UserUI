@@ -24,6 +24,19 @@ export class ExhibitionComponent implements OnInit {
     },err=>{
       console.log(err)
     })
+    // this.loadScript('../../../../assets/js/validation.js');
+    this.loadScript('../../../../assets/js/twak.js');
+    // this.loadScript('../../../../assets/js/form-submission-handler.js');
+  }
+  loadScript(url: string) {
+    const body = <HTMLDivElement>document.body;
+    const script = document.createElement('script');
+    script.innerHTML = '';
+    script.src = url;
+    script.async = false;
+    script.defer = true;
+    script.type = 'text/javascript';
+    body.appendChild(script);
   }
   yogaBooth(){
     this.router.navigate(['home/yoga']);

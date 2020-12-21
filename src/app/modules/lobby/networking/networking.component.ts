@@ -22,6 +22,19 @@ export class NetworkingComponent implements OnInit {
     },err=>{
       console.log(err)
     })
+  
+    // this.loadScript('../../../../assets/js/validation.js');
+    this.loadScript('https://chatwee-api.com/v2/script/5fda2bf5746ed6272a1475b2.js');
+// this.loadScript('../../../../assets/js/form-submission-handler.js');
   }
+loadScript(url: string) {
+  const body = <HTMLDivElement>document.body;
+  const script = document.createElement('script');
+  script.innerHTML = '';
+  script.src = url;
+  script.async = false;
+  script.defer = true;
 
+  body.appendChild(script);
+}
 }

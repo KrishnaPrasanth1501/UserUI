@@ -1,4 +1,4 @@
-$("form[name='eniqueryform1']").validate({
+$("form[name='eniqueryform']").validate({
     rules: {
       Name: "required",
       email: {
@@ -9,16 +9,15 @@ $("form[name='eniqueryform1']").validate({
       jobtitle: "required",
       phone: {
         required: true,
-        digits: true,
-        minlength: 10,
-        maxlength: 10
+        digits: true
+
       },
       country: "required",
       product: "required"
     },
     messages: {
       Name: {
-        required: "Name and Surname Required."
+        required: "Name  Required."
       },
       email: "Please enter a valid email address",
       jobtitle: "Please Enter Your Job Title",

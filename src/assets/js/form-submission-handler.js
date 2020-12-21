@@ -62,6 +62,7 @@ console.log(form)
     }
     if (data.Name !== '' && data.email !== '' && data.phone !== '' && data.jobtitle !== '' && data.company !== '' && data.country !== '' && data.product !== '') {
       disableAllButtons(form);
+      console.log(form)
       var url = form.action;
       var xhr = new XMLHttpRequest();
       xhr.open('POST', url);
@@ -86,10 +87,10 @@ console.log(form)
           return false;
       };
       // url encode form data for sending as post data
-      var encoded = Object.keys(data).map(function(k) {
-          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-      }).join('&');
-      xhr.send(encoded);
+      // var encoded = Object.keys(data).map(function(k) {
+      //     return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+      // }).join('&');
+      // xhr.send(encoded);
     }
 
 
@@ -98,6 +99,7 @@ console.log(form)
   function loaded() {
     // bind to the submit event of our form
     var forms = document.querySelectorAll("form.gform");
+    console.log(forms)
     for (var i = 0; i < forms.length; i++) {
       forms[i].addEventListener("submit", handleFormSubmit, false);
     }

@@ -33,6 +33,14 @@ export class SignInComponent implements OnInit {
           localStorage.setItem('email',res.details.email)
           console.log(res.token)
           localStorage.setItem('token',res.token);
+          
+          if (localStorage.getItem('view') == '1') {
+
+          } else {
+            localStorage.setItem('view', '0');
+          }
+
+         
           this.router.navigate(['home'])
           this.empty()
           this.loginClick(1)

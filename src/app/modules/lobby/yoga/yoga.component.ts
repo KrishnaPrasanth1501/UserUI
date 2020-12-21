@@ -24,7 +24,8 @@ export class YogaComponent implements OnInit {
       console.log(err)
     })
     this.loadScript('../../../../assets/js/validation.js');
-    // this.loadScript('../../../../assets/js/form-submission-handler.js');
+    // this.loadScript('../../../../assets/js/twak.js');
+    this.loadScript('../../../../assets/js/form-submission-handler.js');
   }
   loadScript(url: string) {
     const body = <HTMLDivElement> document.body;
@@ -33,6 +34,7 @@ export class YogaComponent implements OnInit {
     script.src = url;
     script.async = false;
     script.defer = true;
+    script.type = 'text/javascript';
     body.appendChild(script);
   }
   enterClick(btn_id:any){

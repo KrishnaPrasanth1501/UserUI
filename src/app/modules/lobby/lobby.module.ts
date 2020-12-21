@@ -11,6 +11,7 @@ import { YogaComponent } from './yoga/yoga.component';
 import { ThinkBookComponent } from './think-book/think-book.component';
 import { ThinkPadComponent } from './think-pad/think-pad.component';
 import { IdeaPadComponent } from './idea-pad/idea-pad.component';
+import { FormBuilder } from '@angular/forms';
 
 
 
@@ -19,6 +20,9 @@ import { IdeaPadComponent } from './idea-pad/idea-pad.component';
   imports: [
     CommonModule,
     LobbyRoutingModule
+  ],
+  providers: [
+    FormBuilder
   ]
 })
 export class LobbyModule { }

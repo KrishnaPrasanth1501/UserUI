@@ -1,17 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
-
+// import{ModalDirective} from 'ngx-bootstrap/modal';
+import {FormBuilder,FormGroup,Validators} from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor(private router:Router,private service:ApiService) { }
+@ViewChild('closebutton') closebutton:any;
+  constructor(private router:Router,private service:ApiService,private fb:FormBuilder) { }
 
   ngOnInit(): void {
+
     var data={
       "user_id":localStorage.getItem('user_id'),
       "pages":"home",
@@ -22,6 +24,32 @@ export class HomeComponent implements OnInit {
     },err=>{
       console.log(err)
     })
+    // this.loadScript('../../../../assets/js/validation.js');
+    this.loadScript('../../../../assets/js/twak.js');
+    // this.loadScript('../../../../assets/js/form-submission-handler.js');
+    var viewcount = localStorage.getItem('view')
+    if (viewcount == '1') {
+    // this.showModal = false
+      this.closebutton.nativeElement.click();
+    } else {
+      
+    }
+    window.onbeforeunload = (function () {
+      localStorage.setItem('view', '1');
+
+      return null;
+    })()
+// setTimeout(function(){ $('#videopopup').modal('hide'); }, 163000);
+  }
+  loadScript(url: string) {
+    const body = <HTMLDivElement>document.body;
+    const script = document.createElement('script');
+    script.innerHTML = '';
+    script.src = url;
+    script.async = false;
+    script.defer = true;
+    script.type = 'text/javascript';
+    body.appendChild(script);
   }
   
   enterClickExhibition(){

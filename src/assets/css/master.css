@@ -1916,3 +1916,9 @@ option{
   
     z-index: 99;
 }
+
+
+.sol-pop video {
+  width: 100%;
+  height:auto;
+}
