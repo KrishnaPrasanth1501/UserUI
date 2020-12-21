@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import { ApiService } from 'src/app/services/api.service';
+import { Subscription, interval } from "rxjs";
+
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -10,11 +12,37 @@ export class SignInComponent implements OnInit {
 
   fullName:any;
   email:any;
+  timerFlag: number=0;
   constructor(private service:ApiService,private router:Router) { }
+  // private subscription: Subscription;
 
+  public dateNow = new Date();
+  public dDay = new Date("Jan 01 2021 00:00:00");
+  milliSecondsInASecond = 1000;
+  hoursInADay = 24;
+  minutesInAnHour = 60;
+  SecondsInAMinute = 60;
+
+  timeDifference:any;
+  secondsToDday:any;
+   minutesToDday:any;
+  hoursToDday:any;
+  daysToDday:any;
   ngOnInit(): void {
+
     if(!!localStorage.getItem('token')){
       this.router.navigate(['home'])
+    }else{
+      const d = new Date();
+      d.setTime(1608609600000);
+      console.log(d)
+      if(d>new Date()){
+        this.timerFlag=1
+        console.log(this.timerFlag)
+      }else{
+        this.timerFlag=0
+        console.log(this.timerFlag)
+      }
     }
     }
 
@@ -33,14 +61,6 @@ export class SignInComponent implements OnInit {
           localStorage.setItem('email',res.details.email)
           console.log(res.token)
           localStorage.setItem('token',res.token);
-          
-          if (localStorage.getItem('view') == '1') {
-
-          } else {
-            localStorage.setItem('view', '0');
-          }
-
-         
           this.router.navigate(['home'])
           this.empty()
           this.loginClick(1)
