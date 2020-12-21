@@ -9,6 +9,17 @@ import { ApiService } from 'src/app/services/api.service';
 })
 
 export class YogaComponent implements OnInit {
+  formJson={
+    "fullname":"",
+    "email":"",
+    "phone":"",
+    "company":"",
+    "job_title":"",
+    "product_type":"",
+    "receiveqoute":false,
+    "giveacall":false,
+    "country":""
+  }
   constructor(private router:Router,private service:ApiService) { }
 
   ngOnInit(): void {
@@ -63,6 +74,16 @@ export class YogaComponent implements OnInit {
       console.log(err)
     })
     this.enterClick(14)
+  }
+  formsubmit(){
+    console.log(this.formJson)
+    this.service.post(this.service.googleFormsSubmit,this.formJson).subscribe(
+      res=>{
+        console.log(res)
+      },
+      err=>{
+        console.log(err)
+      })
   }
   
 }

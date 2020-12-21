@@ -184,113 +184,131 @@
                    </button>
                 </div>
                 <div class="modal-body">
-                   <form class="" method="POST" name="eniqueryform" data-email="lenovobrandday@gmail.com" action="https://script.google.com/macros/s/AKfycbx9Lmmjm6X_O2_W7fA5xD1Q7qgAMkZG0GaHLwqRKw/exec" novalidate="novalidate">
-                      <div class="form-elements">
-                         <h6 class="font-stn">Fill In your Personal Information</h6>
-                         <hr class="bg-white mt-0 mb-2">
-                         <div class="row">
-                            <div class="col-lg-6">
-                               <div class="form-group">
-                                  <label for="">Full Name</label>
-                                  <input type="text" class="form-control error" placeholder="" name="Name" id="Name" aria-invalid="true"><label id="Name-error" class="error" for="Name">Name and Surname Required.</label>
-                               </div>
-                               <div class="form-group">
-                                  <label for="">Email</label>
-                                  <input type="email" class="form-control error" placeholder="" name="email"><label id="email-error" class="error" for="email">Please enter a valid email address</label>
-                               </div>
-                               <div class="form-group">
-                                  <label for="">Company</label>
-                                  <input type="text" class="form-control error" placeholder="" name="company"><label id="company-error" class="error" for="company">Company Name is Required</label>
-                               </div>
-                            </div>
-                            <div class="col-lg-6">
-                               <div class="form-group">
-                                  <label for="">Mobile</label>
-                                  <input type="text" class="form-control error" placeholder="" name="phone"><label id="phone-error" class="error" for="phone">Please enter phone number</label>
-                               </div>
-                               <div class="form-group">
-                                  <label for="">Country </label>
-                                  <input type="text" class="form-control error" placeholder="" name="country"><label id="country-error" class="error" for="country">Country Name is Required</label>
-                               </div>
-                               <div class="form-group">
-                                  <label for="">Job Title</label>
-                                  <input type="text" class="form-control error" placeholder="" name="jobtitle"><label id="jobtitle-error" class="error" for="jobtitle">Please Enter Your Job Title</label>
-                               </div>
-                            </div>
-                         </div>
-                         <h6 class="mt-4 font-stn">Select the Product you want to enquire</h6>
-                         <hr class="bg-white mt-0 mb-2">
-                         <div class="row">
-                            <div class="col-lg-6">
-                               <div class="form-group">
-                                  <label for="">Product Type</label>
-                                  <select class="form-control">
-                                     <option value="">Please Select</option>
-                                     <option value="" class="bgoption">Yoga</option>
-                                     <option value="">Yoga C940</option>
-                                     <option value="">Yoga Creator 7</option>
-                                     <option value="">Yoga Slim 7</option>
-                                     <option value="">Yoga S940</option>
-                                     <option value="" class="bgoption">Ideapad</option>
-                                     <option value="">Ideapad 3i</option>
-                                     <option value="">Ideapad Creator 5i</option>
-                                     <option value="" class="bgoption">Legion</option>
-                                     <option value="">Legion 5</option>
-                                     <option value="">Legion 7</option>
-                                     <option value="">Legion Tower 5i</option>
-                                     <option value="" class="bgoption">Ideapad Gaming</option>
-                                     <option value="">IdeaPad Gaming 3</option>
-                                     <option value="" class="bgoption">Thinkbook</option>
-                                     <option value="">ThinkBook 13s</option>
-                                     <option value="">Thinkbook 14</option>
-                                     <option value="">Thinkbook 15</option>
-                                     <option value="">ThinkBook Plus</option>
-                                     <option value="" class="bgoption">Thinkpad</option>
-                                     <option value="">ThinkPad X1 Carbon</option>
-                                     <option value="">ThinkPad x1 Extreme</option>
-                                     <option value="">ThinkPad X1 Yoga</option>
-                                     <option value="">ThinkPad X1 Fold</option>
-                                     <option value="">ThinkPad X13</option>
-                                     <option value="">ThinkPad P1 Gen 2</option>
-                                     <option value="">ThinkPad P14s G1</option>
-                                     <option value="">ThinkPad T14</option>
-                                     <option value="">ThinkPad E14</option>
-                                     <option value="" class="bgoption">Thinkstation</option>
-                                     <option value="">Thinkstation P920</option>
-                                     <option value="">ThinkStation P620</option>
-                                     <option value="" class="bgoption">Thinkcentre</option>
-                                     <option value="">M90n Nano IoT</option>
-                                     <option value="">M90n Nano</option>
-                                     <option value="">ThinkCentre M75q-1</option>
-                                     <option value="">ThinkCentre M920t</option>
-                                     <option value="">Tiny-in-One 24 (Gen 4)</option>
-                                     <option value="">M725 SFF</option>
-                                     <option value="" class="bgoption">Thinksmart</option>
-                                     <option value="">ThinkSmart Hub 500</option>
-                                  </select>
-                               </div>
-                            </div>
-                            <div class="col-lg-12">
-                               <div class="checkboxstyle">
+                    <form class="gform" method="POST" name="eniqueryform" data-email="lenovobrandday@gmail.com" action="https://script.google.com/macros/s/AKfycbx9Lmmjm6X_O2_W7fA5xD1Q7qgAMkZG0GaHLwqRKw/exec">
+                        <div class="form-elements">
+                        <h6 class="font-stn">Fill In your Personal Information</h6>
+                        <hr class="bg-white mt-0 mb-2">
+                                <div class="row">
+                                  <div class="col-lg-6">
                                   <div class="form-group">
-                                     <input type="checkbox" id="check5" name="outline" value="I would like a stc sales representative to contact me">
-                                     <label for="check5">Do you want to receive a quote for above mentioned product?</label>
-                                     <br>
-                                     <input type="checkbox" id="check6" name="outline" value="I would like to receive email communications about services and offerings from">
-                                     <label for="check6">Do you want our sales to give a call regarding the product?</label>
+                                    <label for="">Full Name</label>
+                                    <input type="text" class="form-control"  placeholder="" name="Name" id="Name">
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="">Email</label>
+                                    <input type="email" class="form-control"  placeholder="" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="">Company</label>
+                                    <input type="text" class="form-control"  placeholder="" name="company">
+                                    </div>
                                   </div>
-                               </div>
+                                  <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label for="">Mobile</label>
+                                    <input type="text" class="form-control"  placeholder="" name="phone">
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="">Country </label>
+                                    <input type="text" class="form-control"  placeholder="" name="country">
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="">Job Title</label>
+                                    <input type="text" class="form-control"  placeholder="" name="jobtitle">
+                                    </div>
+                                  </div>
+                                </div>
+                        
+                        
+                                <h6 class="mt-4 font-stn">Select the Product you want to enquire</h6>
+                                <hr class="bg-white mt-0 mb-2">
+                                <div class="row">
+                                <div class="col-lg-6">
+                                  <div class="form-group">
+                                    <label for="">Product Type</label>
+                                    <select class="form-control" name="product">
+                                      <option value="">Please Select</option>
+                                      <option value="Yoga" class="bgoption">Yoga</option>
+                                      <option value="Yoga-C940">Yoga C940</option>
+                                      <option value="Yoga-Creator-7">Yoga Creator 7</option>
+                                      <option value="Yoga-Slim-7">Yoga Slim 7</option>
+                                      <option value="Yoga-S940">Yoga S940</option>
+                        
+                                      <option value="Ideapad" class="bgoption">Ideapad</option>
+                                      <option value="Ideapad-3i">Ideapad 3i</option>
+                                      <option value="Ideapad-Creator-5i">Ideapad Creator 5i</option>
+                                      
+                                      <option value="Legion" class="bgoption">Legion</option>
+                                      <option value="Legion-5">Legion 5</option>
+                                      <option value="Legion-7">Legion 7</option>
+                                      <option value="Legion-Tower-5i">Legion Tower 5i</option>
+                        
+                                      <option value="Ideapad-Gaming" class="bgoption">Ideapad Gaming</option>
+                                      <option value="IdeaPad-Gaming-3">IdeaPad Gaming 3</option>
+                        
+                                      <option value="Thinkbook" class="bgoption">Thinkbook</option>
+                                      <option value="ThinkBook-13s">ThinkBook 13s</option>
+                                      <option value="Thinkbook-14">Thinkbook 14</option>
+                                      <option value="Thinkbook-15">Thinkbook 15</option>
+                                      <option value="ThinkBook-Plus">ThinkBook Plus</option>
+                        
+                                      <option value="Thinkpad" class="bgoption">Thinkpad</option>
+                                      <option value="ThinkPad-X1-Carbon">ThinkPad X1 Carbon</option>
+                                      <option value="ThinkPad-x1-Extreme">ThinkPad x1 Extreme</option>
+                                      <option value="ThinkPad-X1-Yoga">ThinkPad X1 Yoga</option>
+                                      <option value="ThinkPad-X1-Fold">ThinkPad X1 Fold</option>
+                                      <option value="ThinkPad-X13">ThinkPad X13</option>
+                                      <option value="ThinkPad-P1-Gen-2">ThinkPad P1 Gen 2</option>
+                                      <option value="ThinkPad-P14s-G1">ThinkPad P14s G1</option>
+                                      <option value="ThinkPad-T14">ThinkPad T14</option>
+                                      <option value="ThinkPad-E14">ThinkPad E14</option>
+                        
+                                      <option value="Thinkstation" class="bgoption">Thinkstation</option>
+                                      <option value="Thinkstation-P920">Thinkstation P920</option>
+                                      <option value="ThinkStation-P620">ThinkStation P620</option>
+                        
+                                      <option value="Thinkcentre" class="bgoption">Thinkcentre</option>
+                                      <option value="M90n-Nano-IoT">M90n Nano IoT</option>
+                                      <option value="M90n-Nano">M90n Nano</option>
+                                      <option value="ThinkCentre-M75q-1">ThinkCentre M75q-1</option>
+                                      <option value="ThinkCentre-M920t">ThinkCentre M920t</option>
+                                      <option value="Tiny-in-One-24-(Gen-4)">Tiny-in-One 24 (Gen 4)</option>
+                                      <option value="M725-SFF">M725 SFF</option>
+                        
+                                      <option value="Thinksmart" class="bgoption">Thinksmart</option>
+                                      <option value="ThinkSmart-Hub-500">ThinkSmart Hub 500</option>
+                                    </select>
+                                    </div>
+                                
+                                    
+                                  </div>
+                        
+                                <div class="col-lg-12">
+                                  <div class="checkboxstyle">
+                                    <div class="form-group">
+                        
+                                      <input type="checkbox" id="check5" name="outline" value="I would like a stc sales representative to contact me">
+                                      <label for="check5">Do you want to receive a quote for above mentioned product?</label>
+                                      <br>
+                                      <input type="checkbox" id="check6" name="outline" value="I would like to receive email communications about services and offerings from">
+                                      <label for="check6">Do you want our sales to give a call regarding the product?</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        
+                        
+                          
+                        
+                        <div class="col-lg-12 text-center">
+                              <button type="submit" id="submitbtn" class="btn-white">Submit</button>
                             </div>
-                         </div>
-                         <div class="col-lg-12 text-center">
-                            <button type="submit" id="submitbtn" class="btn-white">Submit</button>
-                         </div>
-                      </div>
-                      <div style="display:none" class="thankyou_message">
-                         <h2>Thank you for contacting us! We will get back to you soon!
-                         </h2>
-                      </div>
-                   </form>
+                          </div>
+                            <div style="display:none" class="thankyou_message">
+                              <h2>Thank you for contacting us! We will get back to you soon!
+                              </h2>
+                            </div>
+                              </form>
                 </div>
              </div>
  

@@ -510,10 +510,10 @@ color: #fff;
 	border-radius: 10px;
 }
 .bord-b1{
-    padding: 20px!important;
+    /* padding: 20px!important;
     border: 12px solid rgba(92, 33, 143, 0.7);
 	box-shadow: 0px 0px 15px rgba(148, 85, 216, 0.7);
-	border-radius: 10px;
+	border-radius: 10px; */
 }
 .agendabox{
 	width: 75%;
@@ -1740,7 +1740,13 @@ padding: 0;
     transform: rotate(45deg);
     vertical-align: middle;
   }
-
+  .bord-b1{
+    padding: 80px 0px!important;
+    border-radius: 27.5px;
+    background-color: rgba(255, 255, 255 ,28%);
+    width: 793px;
+    height: 350px!important;
+}
 .thankyou_message {
 	display: block;
 	height: 54.5vh;
@@ -2261,7 +2267,14 @@ option{
 }
 
 
-
+.flip-clock__slot {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 8px;
+    display: block;
+    font-family: 'Gotham-bold';
+}
 
 .flip-clock__card{
 	font-family: 'Gotham-bold';

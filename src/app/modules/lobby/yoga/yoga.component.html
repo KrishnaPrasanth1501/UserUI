@@ -327,29 +327,29 @@
               <div class="col-lg-6">
               <div class="form-group">
                 <label for="">Full Name</label>
-                <input type="text" class="form-control"  placeholder="" name="Name" id="Name">
+                <input type="text" class="form-control" [(ngModel)]="formJson.fullname" placeholder="" id="name" name="Name" id="Name">
                 </div>
                 <div class="form-group">
                 <label for="">Email</label>
-                <input type="email" class="form-control"  placeholder="" name="email">
+                <input type="email" class="form-control" id="email"[(ngModel)]="formJson.email" placeholder="" name="email">
                 </div>
                 <div class="form-group">
                 <label for="">Company</label>
-                <input type="text" class="form-control"  placeholder="" name="company">
+                <input type="text" class="form-control" [(ngModel)]="formJson.company" placeholder="" id="company"name="company">
                 </div>
               </div>
               <div class="col-lg-6">
               <div class="form-group">
                 <label for="">Mobile</label>
-                <input type="text" class="form-control"  placeholder="" name="phone">
+                <input type="text" class="form-control" [(ngModel)]="formJson.phone" id="phone" placeholder="" name="phone">
                 </div>
                 <div class="form-group">
                 <label for="">Country </label>
-                <input type="text" class="form-control"  placeholder="" name="country">
+                <input type="text" class="form-control" [(ngModel)]="formJson.country" id="country" placeholder="" name="country">
                 </div>
                 <div class="form-group">
                 <label for="">Job Title</label>
-                <input type="text" class="form-control"  placeholder="" name="jobtitle">
+                <input type="text" class="form-control" [(ngModel)]="formJson.job_title" placeholder="" id="job_title" name="jobtitle">
                 </div>
               </div>
             </div>
@@ -361,7 +361,7 @@
             <div class="col-lg-6">
               <div class="form-group">
                 <label for="">Product Type</label>
-                <select class="form-control" name="product">
+                <select class="form-control" id="product_type" [(ngModel)]="formJson.product_type" name="product">
                   <option value="">Please Select</option>
                   <option value="Yoga" class="bgoption">Yoga</option>
                   <option value="Yoga-C940">Yoga C940</option>
@@ -422,10 +422,10 @@
               <div class="checkboxstyle">
                 <div class="form-group">
     
-                  <input type="checkbox" id="check5" name="outline" value="I would like a stc sales representative to contact me">
+                  <input type="checkbox" id="outline" [(ngModel)]="formJson.receiveqoute" id="check5" name="outline" value="I would like a stc sales representative to contact me">
                   <label for="check5">Do you want to receive a quote for above mentioned product?</label>
                   <br>
-                  <input type="checkbox" id="check6" name="outline" value="I would like to receive email communications about services and offerings from">
+                  <input type="checkbox" id="outline1" [(ngModel)]="formJson.giveacall" id="check6" name="outline" value="I would like to receive email communications about services and offerings from">
                   <label for="check6">Do you want our sales to give a call regarding the product?</label>
                 </div>
               </div>
@@ -436,7 +436,7 @@
       
     
     <div class="col-lg-12 text-center">
-          <button type="submit" id="submitbtn" class="btn-white">Submit</button>
+          <button type="button" (click)="formsubmit()" id="submitbtn" class="btn-white">Submit</button>
         </div>
       </div>
         <div style="display:none" class="thankyou_message">
