@@ -1,7 +1,7 @@
 <section class="lobby w-100">
 <app-header></app-header>
 <div  id="video" class="videolobby ">
-	<video id="mp4" loop  controlsList="nodownload noremote foobar" autoplay muted>
+	<video id="mp4" loop  controlsList="nodownload noremote foobar" autoplay muted="1">
 	 <source src="../../../../assets/videos/main_hall.mp4" type="video/mp4">
 	  </video>
 
@@ -122,16 +122,16 @@
 
 	</section>
 <!-- Video Popup -->
-<div class="modal fade show" id="videopopup" tabindex="-1" role="dialog" aria-labelledby="leaderboardTitle" aria-hidden="true">
+<div class="modal fade " id="videopopup" tabindex="-1" role="dialog" aria-labelledby="leaderboardTitle" aria-hidden="true">
 	<div class="modal-dialog modal-lg   vediopop ">
 		<div class="vediopopauto ">
 		   <button type="button" #closebutton class="close" data-dismiss="modal" aria-label="Close">
 		   <span aria-hidden="true">&times;</span>
 		   </button>
 		</div>
-		<div class="modal-content ">
+		<div class="modal-content  ">
 
-			<div  id="video1" class="videolobby-auto ">
+			<div  id="video1" class="videolobby-auto load-popup1">
 				<video id="mp41" loop  controlsList="nodownload noremote foobar" width="100%" height="500px">
 				 <source src="../../../../assets/videos/lobbyauto.mp4" type="video/mp4" >
 				  </video>
@@ -158,10 +158,12 @@
 		   <span aria-hidden="true">&times;</span>
 		   </button>
 		</div>
-		<div class="modal-content ">
-
-			<iframe src="https://player.vimeo.com/video/491305048" width="100%" height="450" 
-			frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>	
+		<div class="modal-content load-popup1">
+			<video id="mp41" loop controls controlsList="nodownload noremote foobar" width="100%" height="500px">
+				<source src="../../../../assets/videos/lenovobrandday.mp4" type="video/mp4" >
+				 </video>
+			<!-- <iframe src="../../../../assets/" width="100%" height="450" 
+			frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>	 -->
 		</div>
 	 </div>
 </div>

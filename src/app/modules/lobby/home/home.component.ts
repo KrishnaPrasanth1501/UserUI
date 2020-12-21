@@ -28,17 +28,14 @@ export class HomeComponent implements OnInit {
     this.loadScript('../../../../assets/js/twak.js');
     // this.loadScript('../../../../assets/js/form-submission-handler.js');
     var viewcount = localStorage.getItem('view')
-    if (viewcount == '1') {
-    // this.showModal = false
-      this.closebutton.nativeElement.click();
-    } else {
-      
+    if (viewcount == '0') {
+      ($('#videopopup') as any).modal('show');
     }
     window.onbeforeunload = (function () {
-      localStorage.setItem('view', '1');
+  localStorage.setItem('view', '1');
 
-      return null;
-    })()
+  return null;
+})()
 // setTimeout(function(){ $('#videopopup').modal('hide'); }, 163000);
   }
   loadScript(url: string) {

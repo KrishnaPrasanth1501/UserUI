@@ -114,7 +114,8 @@ header {
     text-align: center;
 	height: 50px;
 	margin-right: 20px;
-	font-family: Gotham-bold;
+    font-family: Gotham-bold;
+    cursor: pointer;
 
 }
 .mar-right-10{
@@ -179,6 +180,7 @@ top: 17px;
     line-height: 23px;
     font-size: 12pt;
     font-family: 'Gotham-Bold';
+    cursor: pointer;
 }
 .products-display12{
 padding: 0;
@@ -194,6 +196,7 @@ margin: 0;
     height: 26.3px;
     font-family: Gotham-bold;
     padding: 0px;
+    cursor: pointer;
 }
 .products-display12 li {
     list-style: none;
@@ -726,6 +729,7 @@ width: 40%;
     margin-right: 0px;
     font-family: Gotham-bold;
     padding: 2px;
+    cursor: pointer;
 }
 .bottom-buttons-lobby {
     background-color: rgba(0,0,0,39%);
@@ -758,7 +762,8 @@ width: 40%;
     width: 115px;
 	text-align: center;
 	background-repeat: no-repeat;
-	font-family: Gotham-bold;
+    font-family: Gotham-bold;
+    cursor: pointer;
 	/* font-weight: bold; */
     /* height: 181px; */
 }
@@ -1049,14 +1054,14 @@ color:#fff!important;
 }
 
 .ondemandbox{
-    background-color: #4f576182;
+    /* background-color: #3e8ddd; */
     /* width: 1024px; */
-    justify-content: center;
+    /* justify-content: center;
     margin: auto;
     color: #fff;
     padding: 20px;
     height: 500px;
-    overflow-y: scroll;
+    overflow-y: scroll; */
 }
 .w-30{
 	width: 30%;
@@ -1277,6 +1282,7 @@ color:#fff!important;
     margin-right: 20px;
     font-family: Gotham-bold;
     height: 50px;
+    cursor: pointer;
 }
 .dropdown-menu{
 padding: 0;
@@ -1312,7 +1318,8 @@ padding: 0;
     font-size: 45px;
     line-height: 30px;
     /* margin-top: 4px; */
-    display: bl
+    cursor: pointer;
+    /* display: bl */
 }
 
 
@@ -1391,6 +1398,7 @@ padding: 0;
     height: 18.3px;
     font-family: Gotham-bold;
     padding: 0px;
+    cursor: pointer;
 }
 .thinkpad .yogabox1 {
     background-color: rgba(0,0,0,0.4);
@@ -1403,6 +1411,7 @@ padding: 0;
 
 }
 .thinkpad .yogabox1 .products-display12 li .nav-link {
+    cursor: pointer;
     background-image: url(../images/pro2-01.png);
     background-repeat: no-repeat;
     width: 80.688px;
@@ -1433,6 +1442,7 @@ padding: 0;
     height: 18.3px;
     font-family: Gotham-bold;
     padding: 0px;
+    cursor: pointer;
 }
 .thinkpad .yogabox4 {
     background-color: rgba(0,0,0,0.4);
@@ -1454,6 +1464,7 @@ padding: 0;
     height: 18.3px;
     font-family: Gotham-bold;
     padding: 0px;
+    cursor: pointer;
 }
 
 
@@ -1479,6 +1490,7 @@ padding: 0;
     height: 23.3px;
     font-family: Gotham-bold;
     padding: 0px;
+    cursor: pointer;
 }
 .yogapage .yogabox2 {
 	background-color: rgba(0,0,0,0.4);
@@ -1931,6 +1943,339 @@ option{
 
 
 
+
+
+
+
+.flip-clock {
+	text-align: center;
+	-webkit-perspective: 400px;
+	  perspective: 400px;
+	margin: 20px auto;
+	 }
+	 .flip-clock *,
+	 .flip-clock *:before,
+	 .flip-clock *:after {
+	box-sizing: border-box;
+	 }
+	 .flip-clock__piece {
+	display: inline-block;
+	margin: 0 24.5px;
+	 }
+	 .flip-clock__slot {
+	    font-size: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 8px;
+    display: block;
+    font-weight: bold;
+	 }
+	 .card {
+	display: block;
+	position: relative;
+	padding-bottom: 0.72em;
+	font-size: 76px;
+    line-height: 0.85;
+	background-color: #0b77bd;
+	border-radius: 19.43px;
+	
+    box-shadow: 0px 0px 10px rgba(34,34,34,0.5);
+
+	 }
+	 .card__top,
+	 .card__bottom,
+	 .card__back::before,
+	 .card__back::after {
+	display: block;
+	height: 0.72em;
+	color: #fff;
+	background: #0b77bd;
+	padding: 0.25em 0px;
+	border-radius: 0.15em 0.15em 0 0;
+	backface-visiblity: hidden;
+	-webkit-transform-style: preserve-3d;
+	  transform-style: preserve-3d;
+	width: 120px;
+	-webkit-transform: translateZ(0);
+	  transform: translateZ(0);
+	 }
+	 .card__bottom {
+	color: #FFF;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	border-top: solid 1px #000;
+	background: #0b77bd;
+	border-radius: 0 0 0.15em 0.15em;
+	pointer-events: none;
+	overflow: hidden;
+	 }
+	 .card__bottom::after {
+	display: block;
+	margin-top: -0.72em;
+	 }
+	 .card__back::before,
+	 .card__bottom::after {
+	content: attr(data-value);
+	 }
+	 .card__back {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	left: 0%;
+	pointer-events: none;
+	 }
+	 .card__back::before {
+	position: relative;
+	z-index: -1;
+	overflow: hidden;
+	 }
+	 .flip .card__back::before {
+	-webkit-animation: flipTop 0.3s cubic-bezier(0.37, 0.01, 0.94, 0.35);
+	  animation: flipTop 0.3s cubic-bezier(0.37, 0.01, 0.94, 0.35);
+	-webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	-webkit-transform-origin: center bottom;
+	  transform-origin: center bottom;
+	 }
+	 .flip .card__back .card__bottom {
+	-webkit-transform-origin: center top;
+	  transform-origin: center top;
+	-webkit-animation-fill-mode: both;
+	  animation-fill-mode: both;
+	-webkit-animation: flipBottom 0.6s cubic-bezier(0.15, 0.45, 0.28, 1);
+	  animation: flipBottom 0.6s cubic-bezier(0.15, 0.45, 0.28, 1);
+	 }
+	 @-webkit-keyframes flipTop {
+	0% {
+	  -webkit-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+	  z-index: 2;
+	}
+	0%,
+	99% {
+	  opacity: 0.99;
+	}
+	100% {
+	  -webkit-transform: rotateX(-90deg);
+		transform: rotateX(-90deg);
+	  opacity: 0;
+	}
+	 }
+	 @keyframes flipTop {
+	0% {
+	  -webkit-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+	  z-index: 2;
+	}
+	0%,
+	99% {
+	  opacity: 0.99;
+	}
+	100% {
+	  -webkit-transform: rotateX(-90deg);
+		transform: rotateX(-90deg);
+	  opacity: 0;
+	}
+	 }
+	 @-webkit-keyframes flipBottom {
+	0%,
+	50% {
+	  z-index: -1;
+	  -webkit-transform: rotateX(90deg);
+		transform: rotateX(90deg);
+	  opacity: 0;
+	}
+	51% {
+	  opacity: 0.99;
+	}
+	100% {
+	  opacity: 0.99;
+	  -webkit-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+	  z-index: 5;
+	}
+	 }
+	 @keyframes flipBottom {
+	0%,
+	50% {
+	  z-index: -1;
+	  -webkit-transform: rotateX(90deg);
+		transform: rotateX(90deg);
+	  opacity: 0;
+	}
+	51% {
+	  opacity: 0.99;
+	}
+	100% {
+	  opacity: 0.99;
+	  -webkit-transform: rotateX(0deg);
+		transform: rotateX(0deg);
+	  z-index: 5;
+	}
+	 }
+
+
+
+.mar-t-100{
+	margin-top: 70px!important;
+}
+
+	 .submit{
+		 background-color: #0b77bd;
+		 color: #fff;
+		 padding: 10px 20px;
+		 border-radius: 10px;
+	 }
+	 .submit:hover{
+		 color: #fff;
+		 text-decoration: none;
+	 }
+
+
+
+	 .modal-body h1 {
+		font-weight: 900;
+		font-size: 2.3em;
+		text-transform: uppercase;
+	  }
+	  .modal-body a.pre-order-btn {
+		color: #000;
+		background-color: gold;
+		border-radius: 1em;
+		padding: 1em;
+		display: block;
+		margin: 2em auto;
+		width: 50%;
+		font-size: 1.25em;
+		font-weight: 6600;
+	  }
+	  .modal-body a.pre-order-btn:hover {
+		background-color: #000;
+		text-decoration: none;
+		color: gold;
+	  }
+
+
+
+
+
+
+
+.checkboxstyle .form-group input {
+	padding: 0;
+	height: initial;
+	width: initial;
+	margin-bottom: 0;
+	display: none;
+	cursor: pointer;
+  }
+
+  .checkboxstyle .form-group label {
+	position: relative;
+	cursor: pointer;
+  }
+
+  .checkboxstyle .form-group label:before {
+	content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 7px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+	margin-right: 10px;
+	margin-bottom:4px;
+  }
+
+  .checkboxstyle  .form-group input:checked + label:after {
+	content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    width: 5px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    vertical-align: middle;
+  }
+
+.thankyou_message {
+	display: block;
+	height: 54.5vh;
+}
+
+.thankyou_message h2 {
+	padding-top: 150px;
+}
+
+
+
+
+.lenovadiv{
+	width: 400px;
+	padding-top: 30px;
+}
+.inteldiv{
+	width: 350px;
+	padding-top: 35px;
+	padding-right: 40px;
+	float: right;
+}
+
+.lenovadiv1{
+	/* width: 60px; */
+    float: right;
+	height: 175px;
+	bottom: 20px;
+    position: relative;
+}
+.lenovadiv1 img{
+	object-fit: cover;
+    height: inherit;
+}
+
+.proimg{
+	background-color: #fff;
+    /* width: 120px; */
+	padding: 15px;
+	margin: 5px;
+	height: 150px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+
+.loginpage {
+    background-image: url(../images/loginback12-01.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
+
+.flip-clock__card{
+	font-family: 'Gotham-bold';
+	font-weight: bold;
+}
+
+
+.load-popup1 video{
+    width:100% !important;
+    height: auto!important;
+}
+
+/* 
+
 .flip-clock {
     text-align: center;
     -webkit-perspective: 400px;
@@ -2087,4 +2432,24 @@ option{
               transform: rotateX(0deg);
       z-index: 5;
     }
-  }
+  } */
+
+
+
+
+  .educationbg{
+    background-color: #3e8ddd;
+    padding-left: 10px;
+}
+.healthbg{
+    background-color: #6ac346;
+    padding-left: 10px;
+}
+.securitybg{
+    background-color: #ff6a00;
+    padding-left: 10px;
+}
+.smbbg{
+    background-color: #e1140a;
+    padding-left: 10px;
+}

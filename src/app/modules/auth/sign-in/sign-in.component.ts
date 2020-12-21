@@ -29,14 +29,12 @@ export class SignInComponent implements OnInit {
   hoursToDday:any;
   daysToDday:any;
   ngOnInit(): void {
-
+    this.loadScript('../../../../assets/js/counter.js');
     if(!!localStorage.getItem('token')){
       this.router.navigate(['home'])
     }else{
-      const d = new Date();
-      d.setTime(1608609600000);
-      console.log(d)
-      if(d>new Date()){
+     var localtimerflag=sessionStorage.getItem('timer')
+      if(localtimerflag=="0"){
         this.timerFlag=1
         console.log(this.timerFlag)
       }else{
@@ -44,6 +42,16 @@ export class SignInComponent implements OnInit {
         console.log(this.timerFlag)
       }
     }
+    }
+    loadScript(url: string) {
+      const body = <HTMLDivElement>document.body;
+      const script = document.createElement('script');
+      script.innerHTML = '';
+      script.src = url;
+      script.async = false;
+      script.defer = true;
+      script.type = 'text/javascript';
+      body.appendChild(script);
     }
 
     SignIn(){
@@ -61,6 +69,12 @@ export class SignInComponent implements OnInit {
           localStorage.setItem('email',res.details.email)
           console.log(res.token)
           localStorage.setItem('token',res.token);
+          let viewcount = localStorage.getItem('view')
+          if (viewcount == '1') {
+    
+          } else {
+            localStorage.setItem('view', '0');
+          }
           this.router.navigate(['home'])
           this.empty()
           this.loginClick(1)

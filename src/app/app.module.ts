@@ -8,6 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './services/api.service';
 import { AuthGuard } from './services/auth.guard';
 import { PagerNotFoundComponent } from './pager-not-found/pager-not-found.component';
+import * as bootstrap from "bootstrap";
+import * as $ from "jquery";
 
 @NgModule({
   declarations: [
