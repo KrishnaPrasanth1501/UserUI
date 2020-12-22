@@ -104,7 +104,7 @@ function CountdownTracker(label, value){
     }
     // var deadline = new Date(Date.parse(new Date()) + 12 * 24 * 60 * 60 * 1000);
     // var deadline = new Date(Date.parse(new Date()) +  40 * 60 * 1000);
-    var deadline ="December 21 2020 23:59:00 GMT+0530"
+    var deadline ="December 22 2020 11:00:00 GMT+0530"
     var c = new Clock(deadline, function(){ sessionStorage.setItem('timer', '0');
     if( !localStorage.getItem('firstLoad') )
     {

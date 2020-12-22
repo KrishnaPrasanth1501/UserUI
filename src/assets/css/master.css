@@ -2246,15 +2246,15 @@ option{
     height: inherit;
 }
 
-.proimg{
+/* .proimg{
 	background-color: #fff;
-    /* width: 120px; */
+    width: 120px;
 	padding: 15px;
 	margin: 5px;
-	height: 150px;
+	height: 0px;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
-}
+} */
 
 
 .loginpage {

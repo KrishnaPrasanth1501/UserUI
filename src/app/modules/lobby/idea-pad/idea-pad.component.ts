@@ -36,6 +36,55 @@ export class IdeaPadComponent implements OnInit {
     script.type = 'text/javascript';
     body.appendChild(script);
   }
+  formJson={
+    "fullname":"",
+    "email":"",
+    "phone":"",
+    "company":"",
+    "job_title":"",
+    "product_type":"",
+    "receiveqoute":false,
+    "giveacall":false,
+    "country":""
+  }
+  formFlag: number=0;
+  resetFlag(){
+    this.formFlag=0
+  }
+  formsubmit(){
+    console.log(this.formJson)
+    this.service.post(this.service.googleFormsSubmit,this.formJson).subscribe(
+      res=>{
+        console.log(res)
+        this.formJson={
+          "fullname":"",
+          "email":"",
+          "phone":"",
+          "company":"",
+          "job_title":"",
+          "product_type":"",
+          "receiveqoute":false,
+          "giveacall":false,
+          "country":""
+        }
+        this.formFlag=1;
+      },
+      err=>{
+        console.log(err)
+        this.formJson={
+          "fullname":"",
+          "email":"",
+          "phone":"",
+          "company":"",
+          "job_title":"",
+          "product_type":"",
+          "receiveqoute":false,
+          "giveacall":false,
+          "country":""
+        }
+      })
+  }
+  
   enterClick(btn_id:any){
     var data={
       "user_id":localStorage.getItem('user_id'),

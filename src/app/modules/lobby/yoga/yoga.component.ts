@@ -9,17 +9,7 @@ import { ApiService } from 'src/app/services/api.service';
 })
 
 export class YogaComponent implements OnInit {
-  formJson={
-    "fullname":"",
-    "email":"",
-    "phone":"",
-    "company":"",
-    "job_title":"",
-    "product_type":"",
-    "receiveqoute":false,
-    "giveacall":false,
-    "country":""
-  }
+  
   constructor(private router:Router,private service:ApiService) { }
 
   ngOnInit(): void {
@@ -36,7 +26,6 @@ export class YogaComponent implements OnInit {
     })
     this.loadScript('../../../../assets/js/validation.js');
     // this.loadScript('../../../../assets/js/twak.js');
-    this.loadScript('../../../../assets/js/form-submission-handler.js');
   }
   loadScript(url: string) {
     const body = <HTMLDivElement> document.body;
@@ -45,7 +34,6 @@ export class YogaComponent implements OnInit {
     script.src = url;
     script.async = false;
     script.defer = true;
-    script.type = 'text/javascript';
     body.appendChild(script);
   }
   enterClick(btn_id:any){
@@ -75,14 +63,52 @@ export class YogaComponent implements OnInit {
     })
     this.enterClick(14)
   }
+  formJson={
+    "fullname":"",
+    "email":"",
+    "phone":"",
+    "company":"",
+    "job_title":"",
+    "product_type":"",
+    "receiveqoute":false,
+    "giveacall":false,
+    "country":""
+  }
+  formFlag: number=0;
+  resetFlag(){
+    this.formFlag=0
+  }
   formsubmit(){
     console.log(this.formJson)
     this.service.post(this.service.googleFormsSubmit,this.formJson).subscribe(
       res=>{
         console.log(res)
+        this.formJson={
+          "fullname":"",
+          "email":"",
+          "phone":"",
+          "company":"",
+          "job_title":"",
+          "product_type":"",
+          "receiveqoute":false,
+          "giveacall":false,
+          "country":""
+        }
+        this.formFlag=1;
       },
       err=>{
         console.log(err)
+        this.formJson={
+          "fullname":"",
+          "email":"",
+          "phone":"",
+          "company":"",
+          "job_title":"",
+          "product_type":"",
+          "receiveqoute":false,
+          "giveacall":false,
+          "country":""
+        }
       })
   }
   

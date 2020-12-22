@@ -1,7 +1,7 @@
     <section class="legionbooth w-100">
 	<app-header></app-header>
 		<div  id="video" class="video3">
-			<video id="mp4"  loop  controlsList="nodownload noremote foobar" autoplay muted>
+			<video id="mp4"  loop  controlsList="nodownload noremote foobar" autoplay muted="1">
 			 <source src="../../../../assets/videos/legionbooth.mp4" type="video/mp4">
 			  </video>
 			 
@@ -47,7 +47,7 @@
 				<div class="yogabox">
 					<ul class=" products-display12">
 						<li class="nav-item"> <a class="nav-link active" (click)="viewProducts('thinkbook products')" href="#" data-toggle="modal" data-target=".productview">View Products</a> </li>
-						<li class="nav-item"> <a class="nav-link" href="about.html" data-toggle="modal" data-target="#enqiurenow">Enquire Now </a> </li>
+						<li class="nav-item"> <a class="nav-link" (click)="resetFlag()" href="about.html" data-toggle="modal" data-target="#enqiurenow">Enquire Now </a> </li>
 			</ul>
 				</div>
 			</div>
@@ -68,7 +68,7 @@
 					<div class="yogabox2">
 					<ul class=" products-display12">
 						<li class="nav-item"> <a class="nav-link active"  href="#" data-toggle="modal" (click)="viewProducts('ideapad products')"data-target=".productview-ideapad">View Products</a> </li>
-						<li class="nav-item"> <a class="nav-link" href="about.html" data-toggle="modal" data-target="#enqiurenow">Enquire Now </a> </li>
+						<li class="nav-item"> <a class="nav-link" href="about.html" data-toggle="modal" (click)="resetFlag()" data-target="#enqiurenow">Enquire Now </a> </li>
 			</ul>
 				</div>
 			</div>
@@ -225,37 +225,38 @@
                   </button>
                </div>
                <div class="modal-body">
-				<form class="gform" method="POST" name="eniqueryform" data-email="lenovobrandday@gmail.com" action="https://script.google.com/macros/s/AKfycbx9Lmmjm6X_O2_W7fA5xD1Q7qgAMkZG0GaHLwqRKw/exec">
-					<div class="form-elements">
+				
+				<form class="gform" name="eniqueryform" >
+					<div *ngIf="formFlag==0"class="form-elements">
 					<h6 class="font-stn">Fill In your Personal Information</h6>
 					<hr class="bg-white mt-0 mb-2">
 							<div class="row">
 							  <div class="col-lg-6">
 							  <div class="form-group">
 								<label for="">Full Name</label>
-								<input type="text" class="form-control"  placeholder="" name="Name" id="Name">
+								<input type="text" class="form-control" [(ngModel)]="formJson.fullname" placeholder="" id="name" name="Name" id="Name">
 								</div>
 								<div class="form-group">
 								<label for="">Email</label>
-								<input type="email" class="form-control"  placeholder="" name="email">
+								<input type="email" class="form-control" id="email"[(ngModel)]="formJson.email" placeholder="" name="email">
 								</div>
 								<div class="form-group">
 								<label for="">Company</label>
-								<input type="text" class="form-control"  placeholder="" name="company">
+								<input type="text" class="form-control" [(ngModel)]="formJson.company" placeholder="" id="company"name="company">
 								</div>
 							  </div>
 							  <div class="col-lg-6">
 							  <div class="form-group">
 								<label for="">Mobile</label>
-								<input type="text" class="form-control"  placeholder="" name="phone">
+								<input type="text" class="form-control" [(ngModel)]="formJson.phone" id="phone" placeholder="" name="phone">
 								</div>
 								<div class="form-group">
 								<label for="">Country </label>
-								<input type="text" class="form-control"  placeholder="" name="country">
+								<input type="text" class="form-control" [(ngModel)]="formJson.country" id="country" placeholder="" name="country">
 								</div>
 								<div class="form-group">
 								<label for="">Job Title</label>
-								<input type="text" class="form-control"  placeholder="" name="jobtitle">
+								<input type="text" class="form-control" [(ngModel)]="formJson.job_title" placeholder="" id="job_title" name="jobtitle">
 								</div>
 							  </div>
 							</div>
@@ -267,7 +268,7 @@
 							<div class="col-lg-6">
 							  <div class="form-group">
 								<label for="">Product Type</label>
-								<select class="form-control" name="product">
+								<select class="form-control" id="product_type" [(ngModel)]="formJson.product_type" name="product">
 								  <option value="">Please Select</option>
 								  <option value="Yoga" class="bgoption">Yoga</option>
 								  <option value="Yoga-C940">Yoga C940</option>
@@ -328,10 +329,10 @@
 							  <div class="checkboxstyle">
 								<div class="form-group">
 					
-								  <input type="checkbox" id="check5" name="outline" value="I would like a stc sales representative to contact me">
+								  <input type="checkbox" id="outline" [(ngModel)]="formJson.receiveqoute" id="check5" name="outline" value="I would like a stc sales representative to contact me">
 								  <label for="check5">Do you want to receive a quote for above mentioned product?</label>
 								  <br>
-								  <input type="checkbox" id="check6" name="outline" value="I would like to receive email communications about services and offerings from">
+								  <input type="checkbox" id="outline1" [(ngModel)]="formJson.giveacall" id="check6" name="outline" value="I would like to receive email communications about services and offerings from">
 								  <label for="check6">Do you want our sales to give a call regarding the product?</label>
 								</div>
 							  </div>
@@ -342,14 +343,15 @@
 					  
 					
 					<div class="col-lg-12 text-center">
-						  <button type="submit" id="submitbtn" class="btn-white">Submit</button>
+						  <button type="submit" (click)="formsubmit()" id="submitbtn" class="btn-white">Submit</button>
 						</div>
 					  </div>
-						<div style="display:none" class="thankyou_message">
+						<div *ngIf="formFlag==1" class="thankyou_message">
 						  <h2>Thank you for contacting us! We will get back to you soon!
 						  </h2>
 						</div>
 						  </form>
+					
                </div>
             </div>
 

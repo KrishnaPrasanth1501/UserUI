@@ -18,13 +18,7 @@ html, body {
 	/* border: 2px solid rgba(105, 34, 122, 0.7); */
 	border-radius: 10px;
 }
-.bord-b1{
-	padding: 100px 0px!important;
-    border-radius: 27.5px;
-    background-color: rgba(255, 255, 255 ,28%);
-    width: 793px;
-    height: 390px;
-}
+
 .lenovo-tetimg {
 	width: 65%;
 }

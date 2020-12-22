@@ -62,4 +62,53 @@ export class ThinkBookComponent implements OnInit {
       console.log(err)
     })
   }
+  formJson={
+    "fullname":"",
+    "email":"",
+    "phone":"",
+    "company":"",
+    "job_title":"",
+    "product_type":"",
+    "receiveqoute":false,
+    "giveacall":false,
+    "country":""
+  }
+  formFlag: number=0;
+  resetFlag(){
+    this.formFlag=0
+  }
+  formsubmit(){
+    console.log(this.formJson)
+    this.service.post(this.service.googleFormsSubmit,this.formJson).subscribe(
+      res=>{
+        console.log(res)
+        this.formJson={
+          "fullname":"",
+          "email":"",
+          "phone":"",
+          "company":"",
+          "job_title":"",
+          "product_type":"",
+          "receiveqoute":false,
+          "giveacall":false,
+          "country":""
+        }
+        this.formFlag=1;
+      },
+      err=>{
+        console.log(err)
+        this.formJson={
+          "fullname":"",
+          "email":"",
+          "phone":"",
+          "company":"",
+          "job_title":"",
+          "product_type":"",
+          "receiveqoute":false,
+          "giveacall":false,
+          "country":""
+        }
+      })
+  }
+  
 }

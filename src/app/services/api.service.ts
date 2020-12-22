@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-
+  
   public apiUrl = environment.apiEndpoint;
 
   // most viewd/recentely added | suggestions | search results | details
@@ -17,7 +17,7 @@ export class ApiService {
   insertuserpoints=`${this.apiUrl}/count/insertuserpoints`;
   inseruservisitpages=`${this.apiUrl}/count/insertuservisitpages`;
   getuserleaderpoints=`${this.apiUrl}/count/getuserleaderpoints`;
-  googleFormsSubmit=`https://script.google.com/macros/s/AKfycbx9Lmmjm6X_O2_W7fA5xD1Q7qgAMkZG0GaHLwqRKw/exec`;
+  googleFormsSubmit=`https://ineed.loans:3000/sendlenovoemail`;
   constructor(private http: HttpClient) { }
 
   post(url: string, data: any): Observable<any> {
